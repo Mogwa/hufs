@@ -1,0 +1,3 @@
+class Inf < Dept
+    
+end

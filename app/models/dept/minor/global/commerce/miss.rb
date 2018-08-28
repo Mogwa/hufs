@@ -1,0 +1,3 @@
+class Miss < Dept
+    
+end

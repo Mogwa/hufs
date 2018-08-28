@@ -1,0 +1,3 @@
+class Tha < Dept
+    
+end

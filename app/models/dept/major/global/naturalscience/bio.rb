@@ -1,0 +1,3 @@
+class Bio < Dept
+    
+end

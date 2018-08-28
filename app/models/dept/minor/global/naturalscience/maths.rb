@@ -1,0 +1,3 @@
+class Maths < Dept
+    
+end

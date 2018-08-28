@@ -1,0 +1,3 @@
+class Chcu < Dept
+    
+end

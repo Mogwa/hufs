@@ -1,0 +1,3 @@
+class Grfa < Dept
+    
+end

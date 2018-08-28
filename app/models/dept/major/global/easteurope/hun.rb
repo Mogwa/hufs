@@ -1,0 +1,3 @@
+class Hun < Dept
+    
+end

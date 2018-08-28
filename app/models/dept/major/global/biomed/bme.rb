@@ -1,0 +1,3 @@
+class Bme < Dept
+    
+end

@@ -1,0 +1,3 @@
+class Ellts < Dept
+    
+end

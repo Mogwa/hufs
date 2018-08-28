@@ -1,0 +1,3 @@
+class Chems < Dept
+    
+end

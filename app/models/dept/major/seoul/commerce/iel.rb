@@ -1,0 +1,3 @@
+class Iel < Dept
+    
+end

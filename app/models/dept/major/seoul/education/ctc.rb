@@ -1,0 +1,3 @@
+class Ctc < Dept
+    
+end

@@ -1,0 +1,3 @@
+class Lds < Dept
+    
+end

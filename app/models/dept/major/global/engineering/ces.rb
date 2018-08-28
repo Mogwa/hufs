@@ -1,0 +1,3 @@
+class Ces < Dept
+    
+end

@@ -1,0 +1,3 @@
+class Law < Dept
+    
+end

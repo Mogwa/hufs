@@ -1,0 +1,3 @@
+class Laws < Dept
+    
+end

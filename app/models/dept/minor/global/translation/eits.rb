@@ -1,0 +1,3 @@
+class Eits < Dept
+    
+end

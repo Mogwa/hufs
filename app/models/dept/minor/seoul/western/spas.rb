@@ -1,0 +1,3 @@
+class Spas < Dept
+    
+end

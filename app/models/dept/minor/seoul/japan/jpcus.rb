@@ -1,0 +1,3 @@
+class Jpcus < Dept
+    
+end

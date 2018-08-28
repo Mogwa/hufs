@@ -1,0 +1,3 @@
+class Sit < Dept
+    
+end

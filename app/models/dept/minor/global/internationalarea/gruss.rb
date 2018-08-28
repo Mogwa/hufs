@@ -1,0 +1,3 @@
+class Gruss < Dept
+    
+end

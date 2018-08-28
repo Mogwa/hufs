@@ -1,0 +1,3 @@
+class Eng < Dept
+    
+end

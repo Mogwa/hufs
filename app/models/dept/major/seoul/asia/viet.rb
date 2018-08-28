@@ -1,0 +1,3 @@
+class Viet < Dept
+    
+end

@@ -1,0 +1,53 @@
+<header class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #002B49;">
+  <div class="container">
+    <%=link_to "모두의 과사", root_path, id:'logo', class: 'navbar-brand' %>
+    <!--toggle button-->
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--nav bar-->
+    <nav class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><%= link_to '졸업요건', my_page_path , class: 'nav-link' %></li>
+        <li class="nav-item"><%= link_to '본전공 게시판', '#', class: 'nav-link' %></li>
+        <li class="nav-item"><%= link_to '이중전공 게시판', '#', class: 'nav-link' %></li>
+        <li class="nav-item"><%= link_to '게시판 목록', '#', class: 'nav-link' %></li>
+        
+        <% if user_signed_in? %>
+          <% if current_user.profile.nil? %>
+          <% else %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              학교 사이트 링크
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href= <%=current_user.profile.major.homepage%> target="_blank"> <%=current_user.profile.major.korean %> 사이트</a>
+              <% if current_user.profile.minor.nil?%>
+              <% else %>
+                <a class="dropdown-item" href= <%=current_user.profile.minor.homepage%> target="_blank"> <%=current_user.profile.minor.korean %> 사이트</a>
+              <% end %>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="http://eclass.hufs.ac.kr" target="_blank">이클래스</a>
+              <a class="dropdown-item" href="http://wis.hufs.ac.kr" target="_blank">종합정보시스템</a>
+            </div>
+          </li>
+          <% end %>
+          <li class="nav-item"><%= link_to '로그아웃', destroy_user_session_path, method: :delete, class: 'nav-link', data: { confirm: '로그아웃 하시겠습니까?'} %></li>
+        <%else%>
+          <li class="nav-item"><%= link_to '로그인', new_user_session_path, class: 'nav-link' %></li>
+          <li class="nav-item"><%= link_to '회원가입', new_user_registration_path, class: 'nav-link' %></li>
+        <%end%>
+          
+          
+        
+      </ul>
+    </nav>
+  </div>
+</header>

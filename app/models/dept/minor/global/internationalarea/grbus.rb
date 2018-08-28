@@ -1,0 +1,3 @@
+class Grbus < Dept
+    
+end

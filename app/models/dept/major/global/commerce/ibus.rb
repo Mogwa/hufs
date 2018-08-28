@@ -1,0 +1,3 @@
+class Ibus < Dept
+    
+end

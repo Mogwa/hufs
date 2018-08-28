@@ -1,0 +1,3 @@
+class Tits < Dept
+    
+end

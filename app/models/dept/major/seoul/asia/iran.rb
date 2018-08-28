@@ -1,0 +1,3 @@
+class Iran < Dept
+    
+end

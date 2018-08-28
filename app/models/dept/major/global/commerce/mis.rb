@@ -1,0 +1,3 @@
+class Mis < Dept
+    
+end

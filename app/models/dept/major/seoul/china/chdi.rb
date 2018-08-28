@@ -1,0 +1,3 @@
+class Chdi < Dept
+    
+end

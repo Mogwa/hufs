@@ -1,0 +1,3 @@
+class Afrs < Dept
+    
+end

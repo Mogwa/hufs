@@ -1,0 +1,3 @@
+class Etcs < Dept
+    
+end

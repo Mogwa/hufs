@@ -1,0 +1,3 @@
+class Rum < Dept
+    
+end

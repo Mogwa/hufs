@@ -1,0 +1,3 @@
+class Czsl < Dept
+    
+end

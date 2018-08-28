@@ -1,0 +1,3 @@
+class Ukr < Dept
+    
+end

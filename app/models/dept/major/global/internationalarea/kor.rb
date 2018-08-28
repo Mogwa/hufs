@@ -1,0 +1,3 @@
+class Kor < Dept
+    
+end

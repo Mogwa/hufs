@@ -1,0 +1,3 @@
+class Sfra < Dept
+    
+end

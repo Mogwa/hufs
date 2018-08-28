@@ -1,0 +1,3 @@
+class Ger < Dept
+    
+end

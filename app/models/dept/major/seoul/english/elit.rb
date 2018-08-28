@@ -1,0 +1,3 @@
+class Elit < Dept
+    
+end

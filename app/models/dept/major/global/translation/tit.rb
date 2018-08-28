@@ -1,0 +1,3 @@
+class Tit < Dept
+    
+end

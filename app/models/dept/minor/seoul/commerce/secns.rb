@@ -1,0 +1,3 @@
+class Secns < Dept
+    
+end

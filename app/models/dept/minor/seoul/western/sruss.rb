@@ -1,0 +1,3 @@
+class Sruss < Dept
+    
+end

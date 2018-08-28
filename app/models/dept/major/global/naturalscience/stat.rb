@@ -1,0 +1,3 @@
+class Stat < Dept
+    
+end

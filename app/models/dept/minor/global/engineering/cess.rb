@@ -1,0 +1,3 @@
+class Cess < Dept
+    
+end

@@ -1,0 +1,3 @@
+class Mon < Dept
+    
+end

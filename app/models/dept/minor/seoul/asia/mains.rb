@@ -1,0 +1,3 @@
+class Mains < Dept
+    
+end

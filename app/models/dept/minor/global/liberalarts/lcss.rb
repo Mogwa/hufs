@@ -1,0 +1,3 @@
+class Lcss < Dept
+    
+end

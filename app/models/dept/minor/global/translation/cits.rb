@@ -1,0 +1,3 @@
+class Cits < Depts
+    
+end

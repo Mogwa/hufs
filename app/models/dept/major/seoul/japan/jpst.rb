@@ -1,0 +1,3 @@
+class Jpst < Dept
+    
+end

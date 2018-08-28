@@ -1,0 +1,3 @@
+class Imes < Dept
+    
+end

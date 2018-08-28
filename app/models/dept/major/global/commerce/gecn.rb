@@ -1,0 +1,3 @@
+class Gecn < Dept
+    
+end

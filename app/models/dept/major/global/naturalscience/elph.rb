@@ -1,0 +1,3 @@
+class Elph < Dept
+    
+end

@@ -1,0 +1,3 @@
+class Itas < Dept
+    
+end

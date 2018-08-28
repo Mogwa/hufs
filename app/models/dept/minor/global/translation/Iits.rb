@@ -1,0 +1,3 @@
+class Lits < Dept
+    
+end

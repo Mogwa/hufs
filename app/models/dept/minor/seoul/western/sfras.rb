@@ -1,0 +1,3 @@
+class Sfras < Dept
+    
+end

@@ -1,0 +1,3 @@
+class Elens < Dept
+    
+end

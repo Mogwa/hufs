@@ -1,0 +1,3 @@
+class Eiccs < Dept
+    
+end

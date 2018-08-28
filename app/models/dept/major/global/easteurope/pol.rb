@@ -1,0 +1,3 @@
+class Pol < Dept
+    
+end

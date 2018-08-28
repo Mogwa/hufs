@@ -1,0 +1,3 @@
+class Inds < Dept
+    
+end

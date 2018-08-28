@@ -1,0 +1,3 @@
+class Ld < Dept
+    
+end

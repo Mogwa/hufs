@@ -1,0 +1,3 @@
+class Scan < Dept
+    
+end

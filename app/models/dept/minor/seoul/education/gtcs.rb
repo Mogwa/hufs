@@ -1,0 +1,3 @@
+class Gtcs < Dept
+    
+end

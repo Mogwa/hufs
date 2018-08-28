@@ -1,0 +1,3 @@
+class Adms < Dept
+    
+end

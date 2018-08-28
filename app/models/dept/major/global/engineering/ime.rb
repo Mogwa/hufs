@@ -1,0 +1,3 @@
+class Ime < Dept
+    
+end

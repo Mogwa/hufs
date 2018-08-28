@@ -1,0 +1,3 @@
+class Asias < Dept
+    
+end

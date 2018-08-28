@@ -1,0 +1,3 @@
+class Arabs < Dept
+    
+end

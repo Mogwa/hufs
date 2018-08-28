@@ -1,0 +1,11 @@
+<%= simple_form_for @profile, url: new_profile_path, html: { class: 'form' }, validate: true do |f| %>
+
+  <%= f.input :name, label: "이름", error: '이름은 필수 입력 사항입니다'%>
+  <%= f.input :year, label: "학번", collection: 2004..2018,  prompt: "학번을 선택하세요", error: '학번은 필수 입력 사항입니다'%>
+  <%= f.association :major, label: "본전공", label_method: :korean, value_method: :id, prompt: "전공을 선택하세요",  error: '전공은 필수 입력 사항입니다', :disabled => @notice %>
+  <%= f.association :minor, label: "이중 전공", label_method: :korean, value_method: :id,  prompt: "이중 전공을 선택하세요 / 이중전공이 없으면 선택하지 마세요", :disabled => @notice %>
+  <%= f.input :semester, label: "등록학기", collection: 1..10, as: :radio_buttons, error: '등록학기는 필수 입력 사항입니다'%>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.submit class: "btn btn-secondary"%>
+  
+<% end %>

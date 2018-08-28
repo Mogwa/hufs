@@ -1,0 +1,3 @@
+class Mit < Dept
+    
+end

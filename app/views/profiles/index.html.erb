@@ -1,0 +1,30 @@
+<!-- 프로필 생성 전에 보여주는 화면 -->
+
+<% if @profile.nil? %>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h5><%=current_user.email%>님 환영합니다!</h5>
+  <br>
+  <h5>졸업 시뮬레이션 사용을 위해서는 추가적인 정보 입력이 필요합니다!</h5>
+  <br>
+  <br>
+  <br>
+
+  <section class="row">
+    <div class="mx-auto">
+      <a class="btn btn-secondary" href=<%=new_profile_path%> role="button">정보 입력하러 가기</a>
+    </div>
+  </section>
+  
+<!-- 프로필 생성이 완료되었다면 보여주게되는 화면 -->
+
+<% else %>
+  <% if current_user.profile.minor.nil? %>
+  <%= render 'profiles/withoutminor' %>
+  <% else %>
+  <%= render 'profiles/withminor' %>
+<% end %>
+
+<% end %>

@@ -1,0 +1,3 @@
+class Spa < Dept
+    
+end

@@ -1,0 +1,3 @@
+class Secr < Dept
+    
+end

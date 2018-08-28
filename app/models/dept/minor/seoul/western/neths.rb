@@ -1,0 +1,3 @@
+class Neths < Dept
+    
+end

@@ -1,0 +1,3 @@
+class Bios < Dept
+    
+end

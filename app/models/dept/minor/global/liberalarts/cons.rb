@@ -1,0 +1,3 @@
+class Cons < Dept
+    
+end

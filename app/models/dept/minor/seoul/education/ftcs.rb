@@ -1,0 +1,3 @@
+class Ftcs < Dept
+    
+end

@@ -1,0 +1,3 @@
+class Pscs < Dept
+    
+end

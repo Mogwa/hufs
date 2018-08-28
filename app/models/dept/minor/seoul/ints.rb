@@ -1,0 +1,3 @@
+class Ints < Dept
+    
+end

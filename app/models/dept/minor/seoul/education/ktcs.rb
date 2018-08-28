@@ -1,0 +1,3 @@
+class Ktcs < Dept
+    
+end

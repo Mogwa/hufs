@@ -1,0 +1,3 @@
+class Hiss < Dept
+    
+end

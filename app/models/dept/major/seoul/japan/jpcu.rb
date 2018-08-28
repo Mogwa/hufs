@@ -1,0 +1,3 @@
+class Jpcu < Dept
+    
+end

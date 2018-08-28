@@ -1,0 +1,3 @@
+class Spos < Dept
+    
+end

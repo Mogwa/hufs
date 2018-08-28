@@ -1,0 +1,3 @@
+class Jpsts < Dept
+    
+end

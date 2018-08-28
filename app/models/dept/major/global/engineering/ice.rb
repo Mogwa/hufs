@@ -1,0 +1,3 @@
+class Ice < Dept
+    
+end

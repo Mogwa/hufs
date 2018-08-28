@@ -1,0 +1,3 @@
+class Lcs < Dept
+    
+end

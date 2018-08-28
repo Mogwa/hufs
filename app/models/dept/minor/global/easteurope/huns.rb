@@ -1,0 +1,3 @@
+class Huns < Dept
+    
+end
