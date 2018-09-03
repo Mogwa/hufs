@@ -1,0 +1,3 @@
+class Gfrapost < Post
+    
+end

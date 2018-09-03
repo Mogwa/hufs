@@ -1,0 +1,9 @@
+<h1>게시글 수정</h1>
+
+<%= simple_form_for @findpost, url: post_path, method: :patch, html: { class: 'form' }, validate: true do |f| %> 
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.hidden_field :type, value: @major_post %>
+    <%= f.input :title, label: "제목", error: '올바른 제목을 입력해주세요' %><br>
+    <%= f.input :content, label: "내용", error: '올바른 내용을 입력해주세요'  %><br>
+    <%= f.submit class: "btn btn-secondary" %>
+<%end%>

@@ -59,5 +59,12 @@ module Workspace
     config.autoload_paths += %W(#{config.root}/app/models/dept/minor/seoul/japan)
     config.autoload_paths += %W(#{config.root}/app/models/dept/minor/seoul/socialscience)
     config.autoload_paths += %W(#{config.root}/app/models/dept/minor/seoul/western)
+
+#게시판 type
+    config.autoload_paths += %W(#{config.root}/app/models/post)
+    config.autoload_paths += %W(#{config.root}/app/models/post/global)
+
+
+    
   end
 end

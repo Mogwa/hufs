@@ -1,0 +1,30 @@
+<%= Major.find(current_user.profile.minor_id).korean %> 게시판
+
+<div class="table-responsive">
+    <table class="table table-fit">
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>user</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @posts.each do |post|%>
+            <tr>
+                <td><%= link_to(post.title, 
+                
+                if user_signed_in? 
+                    post_path(post.id)
+                else
+                    user_session_path
+                end
+                
+                
+                )%></td>
+                <td><%= post.user.profile.name%></td>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</div>
+<%= link_to '새 게시물 작성', sub_new_path %>

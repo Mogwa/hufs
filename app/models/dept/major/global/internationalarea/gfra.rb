@@ -1,0 +1,3 @@
+class Gfra < Dept
+    
+end

@@ -1,0 +1,11 @@
+<h1><%=@findpost.title%></h1>
+<hr>
+<h5>by <%=@findpost.user.profile.name%></h5>
+<% if @findpost.user == current_user %>
+    <%= link_to '수정', edit_post_path%>
+    <%= link_to '삭제', post_path, method: :delete %>
+<% else %>
+<% end %>
+<hr>
+<%= @findpost.content.html_safe %>
+<hr>
