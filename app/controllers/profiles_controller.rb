@@ -4,7 +4,6 @@ class ProfilesController < ApplicationController
   
   def new
     @profile = Profile.new
-    @notice = [1, 2,12,17,24,34,40,47,52,54,55,60,69,78,81,84,88,90,93,95,101,103,105]
   end
   
   def create
