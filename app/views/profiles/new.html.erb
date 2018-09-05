@@ -3,11 +3,17 @@
   <%= f.input :name, label: "이름", error: '이름은 필수 입력 사항입니다'%>
 
   <%= f.input :year, label: "학번", collection: 2004..2018,  prompt: "학번을 선택하세요", error: '학번은 필수 입력 사항입니다'%>
-
-  <%= f.input :major_id, collection: Campus.all, as: :grouped_select, group_method: :majors, prompt: "Select One", label_method: :korean, value_method: :id %>
+  
+  <%= f.input :study_type, label: "전공 형태", collection: [['0', '이중전공'], ['1', '부전공'], ['2', '전공심화']], label_method: :second, value_method: :first, as: :radio_buttons, prompt: "전공 형태를 선택하세요"%>
+  
+  <%= f.input :major_campus, collection: Campus.all, label_method: :name, value_method: :id, label: "본전공", prompt: "캠퍼스를 선택하세요" %>
+  <%= f.input :major_id, collection: Campus.all, as: :grouped_select, group_method: :majors, prompt: "전공을 선택하세요", label_method: :korean, value_method: :id, label: false %>
 
   <%= content_tag :div, class: 'js-dependent-fields', data: { 'select-id': 'profile_year', 'option-value': "2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017"} do %>
-    <%= f.input :minor_id, collection: Campus.all, as: :grouped_select, group_method: :minors, prompt: "Select One", label_method: :korean, value_method: :id %>
+    <%= content_tag :div, class: 'js-dependent-fields', data: { 'radio-name': 'profile[study_type]', 'radio-value': "0"} do %>
+      <%= f.input :minor_campus, collection: Campus.all, label_method: :name, value_method: :id, label: "이중전공", prompt: "캠퍼스를 선택하세요" %>
+      <%= f.input :minor_id, collection: Campus.all, as: :grouped_select, group_method: :minors, prompt: "Select One", label_method: :korean, value_method: :id, label: false %>
+    <%end%>
   <% end %>
 
   <%= content_tag :div, class: 'js-dependent-fields', data: { 'select-id': 'profile_year', 'option-value': "2018"} do %>

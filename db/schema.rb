@@ -10,18 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180905034706) do
-
-  create_table "campus", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20180905104914) do
 
   create_table "campuses", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "content"
+    t.integer  "user_id"
+    t.integer  "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_comments_on_post_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "commons", force: :cascade do |t|
@@ -117,15 +121,22 @@ ActiveRecord::Schema.define(version: 20180905034706) do
   end
 
   create_table "posts", force: :cascade do |t|
+    t.string   "type"
+    t.string   "title"
+    t.text     "content"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "profiles", force: :cascade do |t|
     t.string   "name"
     t.integer  "year"
     t.string   "semester"
+    t.string   "major_campus"
     t.string   "minor_campus"
+    t.string   "study_type"
     t.integer  "major_id"
     t.integer  "minor_id"
     t.integer  "user_id"
