@@ -18,4 +18,11 @@
 //= require turbolinks
 //= require rails.validations
 //= require rails.validations.simple_form
+//= require underscore
+//= require dependent-fields
 //= require_tree .
+
+
+$(document).ready(function() {
+    DependentFields.bind()
+});

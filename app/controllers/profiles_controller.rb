@@ -3,6 +3,8 @@ class ProfilesController < ApplicationController
   
   def new
     @profile = Profile.new
+    @majors = Major.all
+    @campuses = Campus.all
   end
   
   def create
@@ -39,7 +41,7 @@ class ProfilesController < ApplicationController
   end
   
   def profile_params
-      params.require(:profile).permit(:name, :year, :major_id, :minor_id, :semester, :user_id)
+      params.require(:profile).permit(:name, :year, :major_id, :minor_id, :semester, :user_id, :campus, :minor_campus)
   end
   
   def graduation_params

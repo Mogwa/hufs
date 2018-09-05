@@ -5,6 +5,7 @@ class CreateProfiles < ActiveRecord::Migration[5.0]
       t.string  :name
       t.integer :year
       t.string  :semester
+      t.string :minor_campus
       t.belongs_to :major, foreign_key: true
       t.belongs_to :minor, foreign_key: true
       t.belongs_to :user, foreign_key: true

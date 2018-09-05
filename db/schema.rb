@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180826160620) do
+ActiveRecord::Schema.define(version: 20180905034706) do
+
+  create_table "campus", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "campuses", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "commons", force: :cascade do |t|
     t.string   "condition"
@@ -88,16 +100,20 @@ ActiveRecord::Schema.define(version: 20180826160620) do
     t.string   "korean"
     t.string   "english"
     t.string   "homepage"
+    t.integer  "campus_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["campus_id"], name: "index_majors_on_campus_id"
   end
 
   create_table "minors", force: :cascade do |t|
     t.string   "korean"
     t.string   "english"
     t.string   "homepage"
+    t.integer  "campus_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["campus_id"], name: "index_minors_on_campus_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -109,11 +125,12 @@ ActiveRecord::Schema.define(version: 20180826160620) do
     t.string   "name"
     t.integer  "year"
     t.string   "semester"
+    t.string   "minor_campus"
     t.integer  "major_id"
     t.integer  "minor_id"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.index ["major_id"], name: "index_profiles_on_major_id"
     t.index ["minor_id"], name: "index_profiles_on_minor_id"
     t.index ["user_id"], name: "index_profiles_on_user_id"

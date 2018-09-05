@@ -17,6 +17,9 @@ gem 'client_side_validations'
 gem 'client_side_validations-simple_form'
 #bootstrap form
 gem "bootstrap_form", ">= 4.0.0.alpha1"
+#dropdownlist dependency
+gem 'dependent-fields-rails'
+gem 'underscore-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'

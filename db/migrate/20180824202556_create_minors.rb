@@ -4,6 +4,7 @@ class CreateMinors < ActiveRecord::Migration[5.0]
       t.string :korean
       t.string :english
       t.string :homepage
+      t.belongs_to :campus, foreign_key: true
 
       t.timestamps
     end
