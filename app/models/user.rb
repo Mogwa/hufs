@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   has_one :profile, dependent: :destroy
   has_one :graduation, dependent: :destroy
+  has_many :comments, dependent: :destroy
+  has_many :posts, dependent: :destroy
   
   #User가 가입할 때 자동으로 Graduation 만들어주기
   before_create :create_graduation

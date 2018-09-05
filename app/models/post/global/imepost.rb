@@ -1,0 +1,2 @@
+class Imepost < Post
+end
