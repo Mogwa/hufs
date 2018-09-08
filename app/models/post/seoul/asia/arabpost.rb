@@ -1,0 +1,3 @@
+class Arabpost < Post
+    
+end

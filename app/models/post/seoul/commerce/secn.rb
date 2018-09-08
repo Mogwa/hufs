@@ -1,0 +1,3 @@
+class Secnpost < Post
+    
+end

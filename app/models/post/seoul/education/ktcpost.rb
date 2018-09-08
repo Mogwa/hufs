@@ -1,0 +1,3 @@
+class Ktcpost < Post
+    
+end

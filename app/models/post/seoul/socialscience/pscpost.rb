@@ -1,0 +1,3 @@
+class Pscpost < Post
+    
+end

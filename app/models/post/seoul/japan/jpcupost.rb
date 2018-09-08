@@ -1,0 +1,3 @@
+class Jpcupost < Post
+    
+end

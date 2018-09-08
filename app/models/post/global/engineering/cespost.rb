@@ -1,0 +1,3 @@
+class Cespost < Post
+    
+end

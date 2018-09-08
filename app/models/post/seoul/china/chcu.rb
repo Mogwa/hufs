@@ -1,0 +1,3 @@
+class Chcupost < Post
+    
+end

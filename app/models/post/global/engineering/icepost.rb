@@ -1,0 +1,4 @@
+class Icepost < Post
+
+    
+end

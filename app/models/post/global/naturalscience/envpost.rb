@@ -1,0 +1,3 @@
+class Envpost < Post
+    
+end

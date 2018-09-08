@@ -1,0 +1,3 @@
+class Afrpost < Post
+    
+end

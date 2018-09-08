@@ -1,0 +1,3 @@
+class Sfrapost < Post
+    
+end

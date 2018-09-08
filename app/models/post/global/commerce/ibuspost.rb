@@ -1,0 +1,3 @@
+class Ibuspost < Post
+    
+end

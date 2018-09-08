@@ -1,0 +1,3 @@
+class Iranpost < Post
+    
+end

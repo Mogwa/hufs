@@ -1,0 +1,3 @@
+class Gruspost < Post
+    
+end

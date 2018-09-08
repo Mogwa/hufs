@@ -1,0 +1,3 @@
+class Biopost < Post
+    
+end

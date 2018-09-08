@@ -42,7 +42,7 @@ class ProfilesController < ApplicationController
   end
   
   def profile_params
-      params.require(:profile).permit(:name, :year, :major_id, :minor_id, :semester, :user_id, :campus, :minor_campus)
+      params.require(:profile).permit(:name, :year, :major_id, :minor_id, :semester, :user_id, :campus, :minor_campus, :study_type, :major_campus)
   end
   
   def graduation_params

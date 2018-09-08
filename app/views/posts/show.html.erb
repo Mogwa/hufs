@@ -1,11 +1,18 @@
 <h1><%=@findpost.title%></h1>
-<hr>
-<h5>by <%=@findpost.user.profile.name%></h5>
-<% if @findpost.user == current_user %>
-    <%= link_to '수정', edit_post_path%>
-    <%= link_to '삭제', post_path, method: :delete %>
-<% else %>
-<% end %>
+
+<div>
+  <div style="text-align:left">
+    <%if user_signed_in? && @findpost.user.email == current_user.email%>
+      <%= button_to '수정', edit_post_path, method: :get, class: 'btn btn-secondary btn-sm' -%>
+      <%= button_to '삭제', post_path, method: :delete, class: 'btn btn-secondary btn-sm', data: {confirm: 'are you sure?' } -%>
+    <%else%>
+    <%end%>
+  </div>
+
+  <div style="text-align:right">
+    작성 일자 : <%=@findpost.created_at.strftime("%Y.%m.%d %H:%M") %> / 작성자 : <%=@findpost.user.profile.name%>(<%=@findpost.user.email%>)<br><br>
+  </div>
+</div>
+
 <hr>
 <%= @findpost.content.html_safe %>
-<hr>

@@ -1,0 +1,3 @@
+class Ldpost < Post
+    
+end

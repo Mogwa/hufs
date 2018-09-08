@@ -1,0 +1,3 @@
+class Thapost < Post
+    
+end

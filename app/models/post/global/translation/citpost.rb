@@ -1,0 +1,3 @@
+class Citpost < Post
+    
+end

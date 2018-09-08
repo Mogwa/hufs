@@ -1,0 +1,3 @@
+class Buspost < Post
+    
+end

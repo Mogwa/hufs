@@ -1,0 +1,3 @@
+class Scanpost < Post
+    
+end

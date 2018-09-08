@@ -1,0 +1,3 @@
+class Gerpost < Post
+    
+end

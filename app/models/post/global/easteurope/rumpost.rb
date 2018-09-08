@@ -1,0 +1,3 @@
+class Rumpost < Post
+    
+end

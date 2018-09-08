@@ -1,0 +1,3 @@
+class Bmepost < Post
+    
+end

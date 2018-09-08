@@ -1,0 +1,3 @@
+class Chdipost < Post
+    
+end

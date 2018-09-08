@@ -1,0 +1,3 @@
+class Hispost < Post
+    
+end

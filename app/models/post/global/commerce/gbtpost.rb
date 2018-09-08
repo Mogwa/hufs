@@ -1,0 +1,3 @@
+class Gbtpost < Post    
+
+end

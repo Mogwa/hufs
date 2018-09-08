@@ -1,0 +1,3 @@
+class Eiccpost < Post
+    
+end

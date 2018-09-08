@@ -1,0 +1,3 @@
+class Indpost < Post
+    
+end

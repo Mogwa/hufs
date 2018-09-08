@@ -1,10 +1,11 @@
-<%= simple_form_for @profile, url: new_profile_path, validate: true do |f| %>
+
+<%= simple_form_for @profile, url: new_profile_path do |f| %>
 
   <%= f.input :name, label: "이름", error: '이름은 필수 입력 사항입니다'%>
 
   <%= f.input :year, label: "학번", collection: 2004..2018,  prompt: "학번을 선택하세요", error: '학번은 필수 입력 사항입니다'%>
   
-  <%= f.input :study_type, label: "전공 형태", collection: [['0', '이중전공'], ['1', '부전공'], ['2', '전공심화']], label_method: :second, value_method: :first, as: :radio_buttons, prompt: "전공 형태를 선택하세요"%>
+  <%= f.input :study_type, label: "전공 형태", collection: [['0', '이중전공'], ['1', '부전공'], ['2', '전공심화']], label_method: :second, value_method: :first, as: :radio_buttons %>
   
   <%= f.input :major_campus, collection: Campus.all, label_method: :name, value_method: :id, label: "본전공", prompt: "캠퍼스를 선택하세요" %>
   <%= f.input :major_id, collection: Campus.all, as: :grouped_select, group_method: :majors, prompt: "전공을 선택하세요", label_method: :korean, value_method: :id, label: false %>

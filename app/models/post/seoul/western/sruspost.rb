@@ -1,0 +1,3 @@
+class Sruspost < Post
+    
+end

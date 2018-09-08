@@ -1,0 +1,3 @@
+class Asiapost < Post
+    
+end

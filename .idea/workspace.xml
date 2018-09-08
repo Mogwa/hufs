@@ -2,24 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a40d6f-53df-46a1-83b0-45a911e60799" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/seeds/campus.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/local_git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/local_git.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/profiles.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/profiles.coffee" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/major.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/major.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/minor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/minor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/post/global/gfrapost.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/post/global/imepost.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/profile.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/profile.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/index.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/sub_index.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/sub_index.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profiles/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/profiles/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180823150759_create_profiles.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180823150759_create_profiles.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180824195448_create_majors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180824195448_create_majors.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180824202556_create_minors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180824202556_create_minors.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds/major.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds/major.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds/minor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds/minor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/client_side_validations.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/client_side_validations.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -34,7 +34,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/local_git@Development__local_git.rcov" NAME="Development: local_git Coverage Results" MODIFIED="1536142893032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="local_git" />
+    <SUITE FILE_PATH="coverage/local_git@Development__local_git.rcov" NAME="Development: local_git Coverage Results" MODIFIED="1536383281719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="local_git" />
     <SUITE FILE_PATH="coverage/local_git@Rails_console__local_git.rcov" NAME="Rails console: local_git Coverage Results" MODIFIED="1535477700900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="local_git" />
   </component>
   <component name="DatabaseView">
@@ -64,23 +64,25 @@
     <session id="-1638623289">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Gemfile" value="2" />
-          <entry key="erb" value="7" />
+          <entry key="Gemfile" value="4" />
+          <entry key="coffee" value="4" />
+          <entry key="erb" value="21" />
           <entry key="generators" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
-          <entry key="js" value="3" />
+          <entry key="js" value="8" />
           <entry key="rakeTasks" value="1" />
-          <entry key="rb" value="50" />
+          <entry key="rb" value="59" />
           <entry key="ru" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
@@ -88,11 +90,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CoffeeScript" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JavaScript" value="3" />
+          <entry key="JavaScript" value="8" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="RHTML" value="7" />
-          <entry key="Ruby" value="53" />
+          <entry key="RHTML" value="21" />
+          <entry key="Ruby" value="64" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -104,74 +107,35 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="30" />
+          <entry key="Gemfile" value="31" />
           <entry key="Ruby Console" value="8" />
-          <entry key="erb" value="1328" />
-          <entry key="js" value="4" />
-          <entry key="rb" value="677" />
+          <entry key="coffee" value="112" />
+          <entry key="erb" value="1880" />
+          <entry key="js" value="10" />
+          <entry key="rb" value="798" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="4" />
-          <entry key="RHTML" value="1328" />
-          <entry key="Ruby" value="715" />
+          <entry key="CoffeeScript" value="112" />
+          <entry key="JavaScript" value="10" />
+          <entry key="RHTML" value="1880" />
+          <entry key="Ruby" value="837" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/campus.rb">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20180823150759_create_profiles.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/major.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
+              <folding>
+                <element signature="e#44#67#0#HTML" expanded="true" />
+                <element signature="e#311#335#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,6 +148,8 @@
       <find>&quot;global&quot;</find>
       <find>&quot;seoul&quot;</find>
       <find>map</find>
+      <find>dept</find>
+      <find>asd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,8 +159,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/views/profiles/_withoutminor.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/models/major.rb" />
         <option value="$PROJECT_DIR$/app/models/minor.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180824202556_create_minors.rb" />
@@ -203,11 +167,21 @@
         <option value="$PROJECT_DIR$/db/seeds/major.rb" />
         <option value="$PROJECT_DIR$/db/seeds/minor.rb" />
         <option value="$PROJECT_DIR$/config/initializers/inflections.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180823150759_create_profiles.rb" />
+        <option value="$PROJECT_DIR$/app/models/campus.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/models/profile.rb" />
         <option value="$PROJECT_DIR$/app/views/profiles/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/campus.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/profiles.coffee" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/posts/sub_index.erb" />
+        <option value="$PROJECT_DIR$/app/views/profiles/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/index.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
       </list>
     </option>
   </component>
@@ -225,9 +199,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="22" />
     <option name="width" value="1680" />
-    <option name="height" value="963" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -237,8 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,23 +226,39 @@
               <item name="local_git" type="b2602c69:ProjectViewProjectNode" />
               <item name="local_git" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="local_git" type="b2602c69:ProjectViewProjectNode" />
               <item name="local_git" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="local_git" type="b2602c69:ProjectViewProjectNode" />
               <item name="local_git" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="local_git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local_git" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="local_git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local_git" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,12 +425,14 @@
       <workItem from="1535476954746" duration="1168000" />
       <workItem from="1535990090971" duration="4666000" />
       <workItem from="1536117049223" duration="3486000" />
-      <workItem from="1536142752278" duration="1561000" />
+      <workItem from="1536142752278" duration="1741000" />
+      <workItem from="1536199969007" duration="3698000" />
+      <workItem from="1536381381044" duration="3851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10881000" />
+    <option name="totallyTimeSpent" value="18610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -458,8 +447,8 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26312578" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.26923078" />
+      <window_info id="Structure" order="1" sideWeight="0.50076103" side_tool="true" weight="0.26923078" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988507" />
@@ -519,13 +508,6 @@
     <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_withminor.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/992199c3-c188-4496-afcc-e8ccdc59f625/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -563,31 +545,10 @@
     <entry file="file://$PROJECT_DIR$/.idea/dataSources.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_withoutminor.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -639,30 +600,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/minor.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180905034706_create_campuses.rb" />
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180905032043_create_campus.rb" />
+    <entry file="file://$PROJECT_DIR$/app/models/campus.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180905034706_create_campuses.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180905032043_create_campus.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180823150759_create_profiles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -673,24 +616,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/minor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/underscore-rails-1.8.3/vendor/assets/javascripts/underscore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22728" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="150">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180823150759_create_profiles.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post/global/gfrapost.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="77" column="79" lean-forward="true" selection-start-line="77" selection-start-column="79" selection-end-line="77" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post/global/translation/eit.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="44" column="145" selection-start-line="44" selection-start-column="145" selection-end-line="44" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-557" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/campus.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/sub_index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/_withminor.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="139" column="104" selection-start-line="139" selection-start-column="69" selection-end-line="139" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#44#67#0#HTML" expanded="true" />
+            <element signature="e#311#335#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

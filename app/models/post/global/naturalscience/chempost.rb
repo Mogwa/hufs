@@ -1,0 +1,3 @@
+class Chempost < Post
+    
+end

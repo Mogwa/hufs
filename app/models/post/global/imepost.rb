@@ -1,2 +1,0 @@
-class Imepost < Post
-end

@@ -1,0 +1,3 @@
+class Engpost < Post
+    
+end

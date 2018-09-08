@@ -1,0 +1,3 @@
+class Portpost < Post
+    
+end

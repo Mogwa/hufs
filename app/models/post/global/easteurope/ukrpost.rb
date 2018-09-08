@@ -1,0 +1,3 @@
+class Ukrpost < Post
+    
+end

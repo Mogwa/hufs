@@ -1,0 +1,3 @@
+class Gitpost < Post
+    
+end

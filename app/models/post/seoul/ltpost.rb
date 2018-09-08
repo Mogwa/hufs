@@ -1,0 +1,3 @@
+class Ltpost < Post
+    
+end

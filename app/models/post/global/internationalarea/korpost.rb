@@ -1,0 +1,3 @@
+class Korpost < Post
+    
+end

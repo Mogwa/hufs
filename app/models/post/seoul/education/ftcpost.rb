@@ -1,0 +1,3 @@
+class Ftcpost < Post
+    
+end

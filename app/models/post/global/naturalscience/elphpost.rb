@@ -1,0 +1,3 @@
+class Elphpost < Post
+    
+end

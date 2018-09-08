@@ -1,30 +1,25 @@
-<%= Major.find(current_user.profile.major_id).korean %> 게시판
-
+<h2> <%= Major.find(current_user.profile.major_id).korean %> 게시판 </h2>
+<br>
 <div class="table-responsive">
-    <table class="table table-fit">
-        <thead>
-            <tr>
-                <th>title</th>
-                <th>user</th>
-            </tr>
-        </thead>
-        <tbody>
-            <% @posts.each do |post|%>
-            <tr>
-                <td><%= link_to(post.title, 
-                
-                if user_signed_in? 
-                    post_path(post.id)
-                else
-                    user_session_path
-                end
-                
-                
-                )%></td>
-                <td><%= post.user.profile.name%></td>
-            </tr>
-            <% end %>
-        </tbody>
+  <table class="table table-fit table-hover">
+    <tr>
+      <th>#</th>
+      <th>제목</th>
+      <th>조회수</th>
+      <th>작성자</th>
+      <th>작성 시간</th>
+    </tr>
+    <% @posts.each do |x|%>
+      <tr onclick= "window.location = '/posts/<%=x.id%>';" >
+        <td><%=x.id%></td>
+        <td><%=x.title%></td>
+        <td></td>
+        <td><%= x.user.profile.name%></td>
+        <td><%=x.created_at.strftime("%Y.%m.%d %H:%M")%></td>
+      </tr>
+      <% end %>
     </table>
 </div>
-<%= link_to '새 게시물 작성', new_post_path %>
+<div class="mx-auto">
+  <a class="btn btn-secondary" href=<%=new_post_path%> role="button">새 게시물 작성</a>
+</div>

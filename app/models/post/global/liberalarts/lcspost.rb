@@ -1,0 +1,3 @@
+class Lcspost < Post
+    
+end

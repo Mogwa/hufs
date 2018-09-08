@@ -63,6 +63,23 @@ module Workspace
 #게시판 type
     config.autoload_paths += %W(#{config.root}/app/models/post)
     config.autoload_paths += %W(#{config.root}/app/models/post/global)
+    config.autoload_paths += %W(#{config.root}/app/models/post/global/translation)
+    config.autoload_paths += %W(#{config.root}/app/models/post/global/liberalarts)
+    config.autoload_paths += %W(#{config.root}/app/models/post/global/easteurope)
+    config.autoload_paths += %W(#{config.root}/app/models/post/global/internationalarea)
+    config.autoload_paths += %W(#{config.root}/app/models/post/global/naturalscience)
+    config.autoload_paths += %W(#{config.root}/app/models/post/global/engineering)
+    config.autoload_paths += %W(#{config.root}/app/models/post/global/commerce)
+    config.autoload_paths += %W(#{config.root}/app/models/post/global/biomed)
+    config.autoload_paths += %W(#{config.root}/app/models/post/seoul)
+    config.autoload_paths += %W(#{config.root}/app/models/post/seoul/asia)
+    config.autoload_paths += %W(#{config.root}/app/models/post/seoul/china)
+    config.autoload_paths += %W(#{config.root}/app/models/post/seoul/commerce)
+    config.autoload_paths += %W(#{config.root}/app/models/post/seoul/education)
+    config.autoload_paths += %W(#{config.root}/app/models/post/seoul/english)
+    config.autoload_paths += %W(#{config.root}/app/models/post/seoul/japan)
+    config.autoload_paths += %W(#{config.root}/app/models/post/seoul/socialscience)
+    config.autoload_paths += %W(#{config.root}/app/models/post/seoul/western)
 
 
     

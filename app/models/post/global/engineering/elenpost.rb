@@ -1,0 +1,4 @@
+class Elenpost < Post
+
+    
+end

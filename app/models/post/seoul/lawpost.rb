@@ -1,0 +1,3 @@
+class Lawpost < Post
+    
+end

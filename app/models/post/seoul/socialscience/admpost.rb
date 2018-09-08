@@ -1,0 +1,3 @@
+class Admpost < Post
+    
+end

@@ -1,0 +1,3 @@
+class Philpost < Post
+    
+end

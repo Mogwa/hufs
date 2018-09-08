@@ -1,0 +1,3 @@
+class Compost < Post
+    
+end

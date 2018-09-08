@@ -1,0 +1,3 @@
+class Elitpost < Post
+    
+end

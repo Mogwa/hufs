@@ -1,0 +1,3 @@
+class Itapost < Post
+    
+end

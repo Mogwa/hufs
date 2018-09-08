@@ -1,0 +1,3 @@
+class Infpost < Post
+
+end

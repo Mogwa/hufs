@@ -1,0 +1,3 @@
+class Hunpost < Post
+    
+end

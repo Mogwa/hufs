@@ -1,0 +1,3 @@
+class Statpost < Post
+    
+end

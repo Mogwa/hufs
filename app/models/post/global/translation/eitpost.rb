@@ -1,0 +1,3 @@
+class Eitpost < Post
+    
+end

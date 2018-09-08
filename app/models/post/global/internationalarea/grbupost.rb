@@ -1,0 +1,3 @@
+class Grbupost < Post
+    
+end

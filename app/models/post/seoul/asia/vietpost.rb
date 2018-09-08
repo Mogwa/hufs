@@ -1,0 +1,3 @@
+class Vietpost < Post
+    
+end

@@ -1,0 +1,3 @@
+class Titpost < Post
+    
+end

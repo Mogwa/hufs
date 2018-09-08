@@ -1,0 +1,3 @@
+class Turpost < Post
+    
+end

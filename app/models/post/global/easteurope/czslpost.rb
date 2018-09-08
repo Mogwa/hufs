@@ -1,0 +1,3 @@
+class Czslpost < Post
+    
+end

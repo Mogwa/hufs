@@ -1,0 +1,3 @@
+class Gtcpost < Post
+    
+end

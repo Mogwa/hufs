@@ -1,0 +1,3 @@
+class Litpost < Post
+    
+end

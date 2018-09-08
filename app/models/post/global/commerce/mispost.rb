@@ -1,0 +1,3 @@
+class Mispost < Post
+    
+end

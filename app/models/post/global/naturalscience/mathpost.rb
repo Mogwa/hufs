@@ -1,0 +1,3 @@
+class Mathpost < Post
+    
+end

@@ -1,0 +1,3 @@
+class Intpost < Post
+    
+end

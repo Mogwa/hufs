@@ -1,0 +1,3 @@
+class Nethpost < Post
+    
+end

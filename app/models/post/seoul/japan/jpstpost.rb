@@ -1,0 +1,3 @@
+class Jpstpost < Post
+    
+end
