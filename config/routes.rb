@@ -3,15 +3,19 @@ Rails.application.routes.draw do
   
   devise_for :users
   resources :posts
+  
+  # 이중전공 게시판 라우팅
+  get 'post_sub' => 'posts#indexs'
   get 'sub_index' => 'posts#sub_index'
   get 'sub_new' => 'posts#sub_new'
   post 'sub_create' => 'posts#sub_create'
   patch 'sub_update' => 'posts#sub_update'
   get 'sub_edit' => 'posts#sub_edit'
   
-  resources :gfraposts, :controller => "posts", :type => "Gfrapost"
-  resources :Imeposts, :controller => "posts", :type => "Imepost"
-  get 'post_sub' => 'posts#indexs'
+  post '/comments' => 'comments#create'
+  delete '/comments/:id' => 'comments#destroy'
+  # resources :gfraposts, :controller => "posts", :type => "Gfrapost"
+  # resources :Imeposts, :controller => "posts", :type => "Imepost"
   
   get 'my_page' => 'profiles#index'
   get 'new_profile' => 'profiles#new'

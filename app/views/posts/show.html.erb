@@ -16,3 +16,35 @@
 
 <hr>
 <%= @findpost.content.html_safe %>
+
+<!-- 댓글 -->
+<% if user_signed_in? %>
+    <%= simple_form_for @comment, url: comments_path do |f| %>
+      <%= f.input :user_id, :as => :hidden, :input_html => { :value => current_user.id } %>
+      <%= f.input :post_id, :as => :hidden, :input_html => { :value => @findpost.id } %>
+      <%= f.input :content, label: "댓글 작성" %>
+      <%= f.submit "작성" %>
+    <%end%>
+  <%else%>
+  <%end%>
+      
+  
+  <% if @comments.empty? %>
+  <%else%>
+    <strong>댓글</strong><br><br>
+        <table class="table table-fit">
+              <%@comments.each do |x| %>
+                <tr>
+                    <td width = "5%"></td>
+                    <td width = "70%"><%=x.content %></td> 
+                    <td width = "20%"><center> by. <%= x.user.email%> </center></td>
+                    <%if user_signed_in? && current_user.id == x.user.id %>
+                        <td width = "5%"><%= link_to "삭제", "/comments/#{x.id}", method: :delete, data: {confirm: 'are you sure?' }, remote: true %></td>
+                    <%else%>
+                        <td width = "5%"></td>
+                    <%end%>
+                </tr>            
+              <%end%>
+        </table>
+        <hr>
+    <%end%>
