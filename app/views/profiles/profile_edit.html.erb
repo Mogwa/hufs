@@ -1,5 +1,5 @@
 
-<%= simple_form_for @profile, url: new_profile_path do |f| %>
+<%= simple_form_for @profile, url: edit_profile_path do |f| %>
 
   <%= f.input :name, label: "이름", error: '이름은 필수 입력 사항입니다'%>
 
@@ -12,17 +12,11 @@
 
   <%= content_tag :div, class: 'js-dependent-fields', data: { 'select-id': 'profile_year', 'option-value': "2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017"} do %>
     <%= content_tag :div, class: 'js-dependent-fields', data: { 'radio-name': 'profile[study_type]', 'radio-value': "0"} do %>
-      <%= f.input :minor_campus, collection: Campus.all, label_method: :name, value_method: :id, label: "이중전공", prompt: "캠퍼스를 선택하세요" %>
-      <%= f.input :minor_id, collection: Campus.all, as: :grouped_select, group_method: :minors, prompt: "Select One", label_method: :korean, value_method: :id, label: false %>
-    <%end%>
-    <%= content_tag :div, class: 'js-dependent-fields', data: { 'radio-name': 'profile[study_type]', 'radio-value': "1" or "2"} do %>
-      <%= f.hidden_field :minor_campus, :value => nil %>
-      <%= f.hidden_field :minor_id, :value => nil %>
+      <%= f.input :minor_campus, collection: Campus.all, label_method: :name, value_method: :id, label: "이중전공", prompt: "캠퍼스를 선택하세요", default: nil %>
+      <%= f.input :minor_id, collection: Campus.all, as: :grouped_select, group_method: :minors, prompt: "Select One", label_method: :korean, value_method: :id, label: false, default: nil %>
     <%end%>
   <% end %>
-
   <%= content_tag :div, class: 'js-dependent-fields', data: { 'select-id': 'profile_year', 'option-value': "2018"} do %>
-
   <% end %>
 
   <%= f.hidden_field :user_id, :value => current_user.id %>

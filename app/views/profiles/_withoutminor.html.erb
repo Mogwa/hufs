@@ -1,183 +1,215 @@
-  <div class="bold">
-    <h2><%=@profile.name%>님의 졸업요건</h2>
-  </div>
-  
-  <% a = Common.all %>
-  <% ab = 0 %>
-    <% a.each do |t| %>
-      <% if t.year.nil? %>
-        <% ab += 1 %>
-      <% elsif t.year.include? current_user.profile.year %>
-        <% ab += 1 %>
-      <% else %>
-      <% end %>
-    <% end %>
-    
-  <% b = current_user.profile.major.english.camelize.constantize.all %>
-    <% bc = 0 %>
-    <% b.each do |t| %>
-      <% if t.year.nil? %>
-        <% bc += 1 %>
-      <% elsif t.year.include? current_user.profile.year %>
-        <% bc += 1 %>
-      <% else %>
-      <% end %>
-    <% end %>
-  
-  <br>
-  <!-- 개인정보 보여주는 표 -->
-  <table class="table text-center table-sm mobile-font">
-      <tr>
-        <th scope="row" class = "bold">이름</th>
-        <td><%= @profile.name %></td>
-        <th scope="row" class = "bold">입학연도</th>
-        <td><%= @profile.year %></td>
-      </tr>
-      <tr>
-        <th scope="row" class = "bold">본전공</th>
-        <td><%=@profile.major.korean%></td>
-        <th scope="row" class = "bold">등록학기</th>
-        <td><%= @profile.semester %></td>
-      </tr>
-      <tr>
-        <th scope="row" class = "bold">진행 정도</th>
-        <td colspan="7">
-          <div class="progress" style="margin-top: 4px; margin-right: 4px">
+<div class="bold">
+  <h2><%=@profile.name%>님의 졸업요건</h2>
+</div>
+
+<% a = current_user.profile.major_campus.camelize.constantize.all%>
+<% ab = 0 %>
+<% a.each do |t| %>
+  <% s = t.start_year.to_i %>
+  <% e = t.end_year.to_i %>
+  <% r = s..e %>
+  <% if t.start_year.nil? %>
+    <% ab += 1 %>
+  <% elsif r.include? current_user.profile.year %>
+    <% ab += 1 %>
+  <% else %>
+  <% end %>
+<% end %>
+
+<% b = current_user.profile.major.english.camelize.constantize.all %>
+<% bc = 0 %>
+<% b.each do |t| %>
+  <% s = t.start_year.to_i %>
+  <% e = t.end_year.to_i %>
+  <% r = s..e %>
+  <% if t.start_year.nil? %>
+    <% bc += 1 %>
+  <% elsif r.include? current_user.profile.year %>
+    <% bc += 1 %>
+  <% else %>
+  <% end %>
+<% end %>
+<br>
+<!-- 개인정보 보여주는 표 -->
+<div class = "table-responsive mobile-font">
+  <table class="table text-center">
+    <tr style="margin-bottom: 0px";>
+      <th scope="row" class = "bold">이름</th>
+      <td><%= @profile.name %></td>
+      <th scope="row" class = "bold">입학연도</th>
+      <td><%= @profile.year %></td>
+      <th scope="row" class = "bold">본전공</th>
+      <td><%=@profile.major.korean%></td>
+    </tr>
+
+    <tr style="position:relative; top: -74px;">
+      <th scope="row" class = "bold">진행 정도</th>
+      <td colspan="9">
+        <div class="progress" style="margin-top: 4px; margin-right: 4px">
           <% if ab == 0 %>
             <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
           <% else %>
             <div class="progress-bar" role="progressbar" style="background-color: #002B49; width: <%= (@count / (ab + bc).to_f) * 100%>%;" aria-valuenow="<%= (@count / (ab + bc).to_f) * 100%>" aria-valuemin="0" aria-valuemax="100"><%= ((@count / (ab + bc).to_f) * 100).round(1)%>%</div>
           <% end %>
-          </div>
-        </td>
-      </tr>
+        </div>
+      </td>
+    </tr>
   </table>
+</div>
 
-<!-- desktop view -->
-  <div class = "d-none d-md-block">
-    <div class="jumbotron mobile-font">
-        <%= simple_form_for @graduation, url: graduation_path, method: 'patch' do |f|%>
-          <div class="row">
-            <div class="col border-right">
-              <h5 class = "bold">학교 공통 사항</h5>
+<div class = "d-none d-md-block">
+  <div class = "jumbotron mobile-font">
+    <!-- 여기서 체크리스트 제공 할 예정 -->
+    <%= simple_form_for @graduation, url: graduation_path, method: 'patch' do |f|%>
+
+      <div class="row">
+        <div class="col-md border-right">
+          <h5 class = "bold">학교 공통 사항</h5>
+          <br>
+          <br>
+          <div class="pre-scrollable-2">
+            <% a = current_user.profile.major_campus.camelize.constantize.all %>
+            <% x = 1 %>
+            <% a.each do |t| %>
+              <% s = t.start_year.to_i %>
+              <% e = t.end_year.to_i %>
+              <% r = s..e %>
+              <% if t.start_year.nil? %>
+                <%= f.input :"c#{x}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
+                <% x += 1 %>
+              <% elsif r.include? current_user.profile.year.to_i%>
+                <%= f.input :"c#{x}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
+                <% x += 1 %>
+              <% else %>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <h5 class="bold">본전공 요건</h5>
+          <br>
+          <br>
+          <div class="pre-scrollable-2">
+            <% b = current_user.profile.major.english.camelize.constantize.all %>
+            <% if b.empty? %>
+              <h5>해당 과 졸업 요건 정보가 없습니다. </h5>
               <br>
-              <br>
-              <div class="pre-scrollable-2">
-                <% a = Common.all %>
-                  <% x = 1 %>
-                  <% a.each do |t| %>
-                    <% if t.year.nil? %>
-                      <%= f.input :"c#{x}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
-                      <% x += 1 %>
-                    <% elsif t.year.include? current_user.profile.year %>
-                      <%= f.input :"c#{x}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
-                      <% x += 1 %>
-                    <% else %>
-                    <% end %>
-                  <% end %>
-              </div>
+              <h5> 정보 추가를 위해서는</h5>
+              <h5> davidkunin@gmail.com으로</h5>
+              <h5> 연락 부탁드립니다. </h5>
+            <%else %>
+              <% y = 1 %>
+              <% b.each do |t| %>
+                <% s = t.start_year.to_i %>
+                <% e = t.end_year.to_i %>
+                <% r = s..e %>
+                <% if t.start_year.nil? %>
+                  <%= f.input :"f#{y}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
+                  <% y += 1 %>
+
+                <% elsif r.include? current_user.profile.year %>
+                  <%= f.input :"f#{y}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
+                  <% y += 1 %>
+                <% else %>
+                <% end %>
+              <% end %>
+            <%end %>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <section class="row">
+        <div class="mx-auto">
+          <%= f.submit class: "btn btn-secondary", value: "업데이트 하기", style: "background-color: #002B49;"%>
+        </div>
+      </section>
+      </div>
+      <div class="text-right font-italic">
+        <p>위 정보는 2018년 12월 31일 마지막으로 확인되었습니다. 더 정확한 정보 확인을 위해서는 각 학과 홈페이지 확인 부탁드립니다.</p>
+      </div>
+      </div>
+    <% end %>
+
+    <!-- mobile view -->
+    <%= simple_form_for @graduation, url: graduation_path, method: 'patch' do |f|%>
+
+      <div class = "d-md-none mobile-font">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h6 class = "bold">학교 공통 사항</h6>
+                </button>
+              </h5>
             </div>
-        
-            <div class="col">
-              <h5 class="bold">본전공 요건</h5>
-              <br>
-              <br>
-              <div class="pre-scrollable-2">
-                <% b = current_user.profile.major.english.camelize.constantize.all %>
-                <% y = 1 %>
-                <% b.each do |t| %>
-                  <% if t.year.nil? %>
-                    <%= f.input :"f#{y}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
-                    <% y += 1 %>
-                  <% elsif t.year.include? current_user.profile.year %>
-                    <%= f.input :"f#{y}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
-                    <% y += 1 %>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <% a = current_user.profile.major_campus.camelize.constantize.all %>
+                <% x = 1 %>
+                <% a.each do |t| %>
+                  <% s = t.start_year.to_i %>
+                  <% e = t.end_year.to_i %>
+                  <% r = s..e %>
+                  <% if t.start_year.nil? %>
+                    <%= f.input :"c#{x}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
+                    <% x += 1 %>
+                  <% elsif r.include? current_user.profile.year %>
+                    <%= f.input :"c#{x}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
+                    <% x += 1 %>
                   <% else %>
                   <% end %>
                 <% end %>
               </div>
             </div>
           </div>
-   
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h6 class="bold">본전공 요건</h6>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <% b = current_user.profile.major.english.camelize.constantize.all %>
+                <% if b.empty? %>
+                  <h5> 해당 과 졸업 요건 정보가 없습니다. </h5>
+                  <br>
+                  <h5> 정보 추가를 위해서는</h5>
+                  <h5> davidkunin@gmail.com으로</h5>
+                  <h5> 연락 부탁드립니다. </h5>
+                <%else %>
+                  <% y = 1 %>
+                  <% b.each do |t| %>
+                    <% s = t.start_year.to_i %>
+                    <% e = t.end_year.to_i %>
+                    <% r = s..e %>
+                    <% if t.start_year.nil? %>
+                      <%= f.input :"f#{y}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
+                      <% y += 1 %>
+                    <% elsif r.include? current_user.profile.year %>
+                      <%= f.input :"f#{y}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
+                      <% y += 1 %>
+                    <% else %>
+                    <% end %>
+                  <% end %>
+                <%end %>
+              </div>
+            </div>
+          </div>
           <br>
-        
-          <div class="row">
+          <section class="row">
             <div class="mx-auto">
               <%= f.submit class: "btn btn-secondary", value: "업데이트 하기", style: "background-color: #002B49;"%>
             </div>
-          </div>
-          
-      </div>
-    </div>
-      <% end %>
-
-
-<!-- mobile view -->
-
-  <%= simple_form_for @graduation, url: graduation_path, method: 'patch' do |f|%>
-  
-   <div class = "d-md-none mobile-font">
-      <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h6 class = "bold">학교 공통 사항</h6>
-              </button>
-            </h5>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-              <% a = Common.all %>
-            <% x = 1 %>
-              <% a.each do |t| %>
-                <% if t.year.nil? %>
-                  <%= f.input :"c#{x}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
-                  <% x += 1 %>
-                <% elsif t.year.include? current_user.profile.year %>
-                  <%= f.input :"c#{x}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
-                  <% x += 1 %>
-                <% else %>
-                <% end %>
-              <% end %>
-            </div>
-          </div>
+          </section>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <h6 class="bold">본전공 요건</h6>
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              <% b = current_user.profile.major.english.camelize.constantize.all %>
-                <% y = 1 %>
-                 <% b.each do |t| %>
-              <% if t.year.nil? %>
-                <%= f.input :"f#{y}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
-                <% y += 1 %>
-              <% elsif t.year.include? current_user.profile.year %>
-                <%= f.input :"f#{y}", as: :boolean, checked_value: 'true', unchecked_value: 'false', label: "#{t.condition}" %> <hr/>
-                <% y += 1 %>
-              <% else %>
-              <% end %>
-            <% end %>
-            </div>
-          </div>
-        </div>
-        <br>
-        <section class="row">
-            <div class="mx-auto">
-              <%= f.submit class: "btn btn-secondary", value: "업데이트 하기", style: "background-color: #002B49;"%>
-            </div>
-          </section>  
       </div>
-    </div>
-    <br>
-    <br>
 
-<% end %>
+    <% end %>

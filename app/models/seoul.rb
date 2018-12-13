@@ -1,0 +1,2 @@
+class Seoul < ApplicationRecord
+end

@@ -21,10 +21,10 @@
 <!-- 프로필 생성이 완료되었다면 보여주게되는 화면 -->
 
 <% else %>
-  <% if current_user.profile.minor.nil? %>
-  <%= render 'profiles/withoutminor' %>
-  <% else %>
+  <% if current_user.profile.study_type == "0" or !current_user.profile.year == 2018 %>
   <%= render 'profiles/withminor' %>
+  <% else %>
+  <%= render 'profiles/withoutminor' %>
 <% end %>
 
 <% end %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'profiles#index'
   
   devise_for :users
@@ -21,5 +22,7 @@ Rails.application.routes.draw do
   get 'new_profile' => 'profiles#new'
   post 'new_profile' => 'profiles#create'
   patch 'graduation', as:'graduation', to: 'profiles#edit'
+  get 'edit_profile' => 'profiles#profile_edit'
+  patch 'edit_profile' => 'profiles#update'
 
 end

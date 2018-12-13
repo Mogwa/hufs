@@ -4,7 +4,6 @@ class CreateProfiles < ActiveRecord::Migration[5.0]
       
       t.string  :name
       t.integer :year
-      t.string  :semester
       t.string :major_campus
       t.string :minor_campus
       t.string :study_type
