@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 20181211154325) do
 
   create_table "graduations", force: :cascade do |t|
     t.integer  "user_id"
+    t.integer  "first_points"
     t.boolean  "f1"
     t.boolean  "f2"
     t.boolean  "f3"
@@ -96,6 +97,7 @@ ActiveRecord::Schema.define(version: 20181211154325) do
     t.boolean  "f38"
     t.boolean  "f39"
     t.boolean  "f40"
+    t.integer  "second_points"
     t.boolean  "s1"
     t.boolean  "s2"
     t.boolean  "s3"
@@ -136,6 +138,7 @@ ActiveRecord::Schema.define(version: 20181211154325) do
     t.boolean  "s38"
     t.boolean  "s39"
     t.boolean  "s40"
+    t.integer  "common_points"
     t.boolean  "c1"
     t.boolean  "c2"
     t.boolean  "c3"
@@ -156,8 +159,8 @@ ActiveRecord::Schema.define(version: 20181211154325) do
     t.boolean  "c18"
     t.boolean  "c19"
     t.boolean  "c20"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.index ["user_id"], name: "index_graduations_on_user_id"
   end
 

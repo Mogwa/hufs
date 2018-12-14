@@ -15,10 +15,6 @@
       <%= f.input :minor_campus, collection: Campus.all, label_method: :name, value_method: :id, label: "이중전공", prompt: "캠퍼스를 선택하세요" %>
       <%= f.input :minor_id, collection: Campus.all, as: :grouped_select, group_method: :minors, prompt: "Select One", label_method: :korean, value_method: :id, label: false %>
     <%end%>
-    <%= content_tag :div, class: 'js-dependent-fields', data: { 'radio-name': 'profile[study_type]', 'radio-value': "1" or "2"} do %>
-      <%= f.hidden_field :minor_campus, :value => nil %>
-      <%= f.hidden_field :minor_id, :value => nil %>
-    <%end%>
   <% end %>
 
   <%= content_tag :div, class: 'js-dependent-fields', data: { 'select-id': 'profile_year', 'option-value': "2018"} do %>

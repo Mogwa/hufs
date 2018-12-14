@@ -1,3 +1,4 @@
+
 <div class="bold">
   <h2><%=@profile.name%>님의 졸업요건</h2>
 </div>
@@ -53,16 +54,20 @@
         <tr style="margin-bottom: 0px";>
           <th scope="row" class = "bold">이름</th>
           <td><%= @profile.name %></td>
+          <td></td>
           <th scope="row" class = "bold">입학연도</th>
           <td><%= @profile.year %></td>
+          <td></td>
         </tr>
-        
-        <tr style="margin-bottom: 0px">
+        <tr>
           <th scope="row" class = "bold">본전공</th>
           <td><%=@profile.major.korean%></td>
+          <td></td>
           <th scope="row" class = "bold">이중전공</th>
           <td><%= @profile.minor.korean%></td>
+          <td></td>
         </tr>
+      </div>
         <tr style="position:relative; top: -74px;">
           <th scope="row" class = "bold">진행 정도</th>
           <td colspan="9">
@@ -80,15 +85,17 @@
   
   <div class = "d-none d-md-block">
     <div class = "jumbotron mobile-font">
+    <%= simple_form_for @graduation, url: graduation_path, wrapper: :input_group,  method: 'patch' do |f|%>
     <!-- 여기서 체크리스트 제공 할 예정 -->
-    <%= simple_form_for @graduation, url: graduation_path, method: 'patch' do |f|%>
-    
       <div class="row">
         <div class="col-md border-right">
           <h5 class = "bold">학교 공통 사항</h5>
           <br>
           <br>
           <div class="pre-scrollable-2">
+            <div class="input-group">
+              <%= f.input :common_points, label: "교양 이수학점", append: "/ 35학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
+            </div>
             <% a = current_user.profile.major_campus.camelize.constantize.all %>
             <% x = 1 %>
               <% a.each do |t| %>

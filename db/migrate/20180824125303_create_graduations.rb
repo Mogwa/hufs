@@ -3,7 +3,8 @@ class CreateGraduations < ActiveRecord::Migration[5.0]
     create_table :graduations do |t|
       
       t.belongs_to :user, foreign_key: true
-      
+
+      t.integer :first_points
       t.boolean :f1
       t.boolean :f2
       t.boolean :f3
@@ -45,6 +46,7 @@ class CreateGraduations < ActiveRecord::Migration[5.0]
       t.boolean :f39
       t.boolean :f40
 
+      t.integer :second_points
       t.boolean :s1
       t.boolean :s2
       t.boolean :s3
@@ -86,6 +88,7 @@ class CreateGraduations < ActiveRecord::Migration[5.0]
       t.boolean :s39
       t.boolean :s40
 
+      t.integer :common_points
       t.boolean :c1
       t.boolean :c2
       t.boolean :c3
