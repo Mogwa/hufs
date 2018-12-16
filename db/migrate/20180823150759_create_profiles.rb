@@ -7,6 +7,7 @@ class CreateProfiles < ActiveRecord::Migration[5.0]
       t.string :major_campus
       t.string :minor_campus
       t.string :study_type
+      t.string :role, null: false, default: 'user'
       t.belongs_to :major, foreign_key: true
       t.belongs_to :minor, foreign_key: true
       t.belongs_to :user, foreign_key: true
