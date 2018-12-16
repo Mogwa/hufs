@@ -1,3 +1,0 @@
-class Math < Dept
-    
-end

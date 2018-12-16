@@ -36,7 +36,7 @@ Major.create(korean: "경영정보학과", english: "Mis",homepage:"http://mis.h
 Major.create(korean: "GBT 학부", english: "Gbt", homepage:"http://gbt.hufs.ac.kr/", campus_id: 2 )
 Major.create(korean: "국제금융학과", english: "Inf", homepage:"http://if.hufs.ac.kr/", campus_id: 2 )
 
-Major.create(korean: "수학과", english: "Math", homepage: "http://math.hufs.ac.kr/", campus_id: 2 )
+Major.create(korean: "수학과", english: "Mat", homepage: "http://math.hufs.ac.kr/", campus_id: 2 )
 Major.create(korean: "통계학과", english: "Stat", homepage: "http://stat.hufs.ac.kr/", campus_id: 2 )
 Major.create(korean: "전자물리학과", english: "Elph", homepage: "http://physics.hufs.ac.kr/", campus_id: 2 )
 Major.create(korean: "환경학과", english: "Env",  homepage:"http://www.envi.hufs.ac.kr/", campus_id: 2 )
