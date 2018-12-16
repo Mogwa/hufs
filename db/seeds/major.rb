@@ -90,7 +90,7 @@ Major.create(korean:"경제학부", english: "Secn", homepage: "http://econ.hufs
 
 Major.create(korean:"경영학부", english: "Bus", homepage: "http://biz.hufs.ac.kr/", campus_id: 1 )
 
-Major.create(korean:"영어교육과", english: "Etc", homepage: "http://www.hufs.ac.kr/hufsee/", campus_id: 1 )
+Major.create(korean:"영어교육과", english: "Engt", homepage: "http://www.hufs.ac.kr/hufsee/", campus_id: 1 )
 Major.create(korean:"프랑스어교육과", english: "Ftc", homepage: "http://fe.hufs.ac.kr/", campus_id: 1 )
 Major.create(korean:"독일어교육과", english: "Gtc", homepage: "http://germanedu.hufs.ac.kr/", campus_id: 1 )
 Major.create(korean:"한국어교육과", english: "Ktc", homepage: "http://hufskle.hufs.ac.kr/", campus_id: 1 )

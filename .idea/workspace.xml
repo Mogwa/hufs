@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a40d6f-53df-46a1-83b0-45a911e60799" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/models/dept/major/global/naturalscience/math.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/dept/major/global/naturalscience/mat.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/dept/major/seoul/education/etc.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/dept/major/seoul/education/engt.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds/major.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds/major.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -129,7 +129,7 @@
           <entry key="erb" value="33" />
           <entry key="js" value="1" />
           <entry key="lock" value="2" />
-          <entry key="rb" value="111" />
+          <entry key="rb" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -138,7 +138,7 @@
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="33" />
-          <entry key="Ruby" value="114" />
+          <entry key="Ruby" value="116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -161,12 +161,8 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/dept/major/global/naturalscience/mat.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/models/dept/major/seoul/education/engt.rb">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -187,6 +183,7 @@
       <find>input_group</find>
       <find>dir</find>
       <find>rake</find>
+      <find>mat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -238,6 +235,7 @@
         <option value="$PROJECT_DIR$/db/migrate/20180823150759_create_profiles.rb" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/db/seeds/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/dept/major/seoul/education/engt.rb" />
       </list>
     </option>
   </component>
@@ -308,7 +306,7 @@
               <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="dept" type="462c0819:PsiDirectoryNode" />
               <item name="major" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
+              <item name="seoul" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
@@ -317,8 +315,19 @@
               <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="dept" type="462c0819:PsiDirectoryNode" />
               <item name="major" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
-              <item name="naturalscience" type="462c0819:PsiDirectoryNode" />
+              <item name="seoul" type="462c0819:PsiDirectoryNode" />
+              <item name="education" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -513,12 +522,12 @@
       <workItem from="1544688585187" duration="324000" />
       <workItem from="1544768405394" duration="5769000" />
       <workItem from="1544776154530" duration="1611000" />
-      <workItem from="1544957334873" duration="2432000" />
+      <workItem from="1544957334873" duration="2608000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49774000" />
+    <option name="totallyTimeSpent" value="49950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,7 +542,7 @@
     <frame x="0" y="23" width="1680" height="971" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.24877751" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.24877751" />
       <window_info id="Structure" order="1" sideWeight="0.50076103" side_tool="true" weight="0.26923078" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -588,22 +597,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181119071907_create_globals.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/dept/major/global/translation/eit.rb">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds/major.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="99" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="99" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rbenv/versions/2.5.3/lib/ruby/2.5.0/rubygems.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -868,6 +863,16 @@
           <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds/major.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/dept/major/seoul/education/engt.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

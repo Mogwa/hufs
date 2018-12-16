@@ -1,3 +1,0 @@
-class Etc < Dept
-    
-end
