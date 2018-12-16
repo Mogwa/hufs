@@ -25,26 +25,26 @@ $font-family-sans-serif: Hufsl !default;
 @font-face {
     font-family: 'Hufsb';
     src: font-url('HUFSB.woff2') format('woff2'),
-        url('HUFSB.woff') format('woff'),
-        url('HUFSB.ttf') format('truetype');
+        font-url('HUFSB.woff') format('woff'),
+        font-url('HUFSB.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Hufsl';
-    src: url('HUFSL.woff2') format('woff2'),
-        url('HUFSL.woff') format('woff'),
-        url('HUFSL.ttf') format('truetype');
+    src:font-url('HUFSL.woff2') format('woff2'),
+        font-url('HUFSL.woff') format('woff'),
+        font-url('HUFSL.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Hufsm';
-    src: url('HUFSM.woff2') format('woff2'),
-        url('HUFSM.woff') format('woff'),
-        url('HUFSM.ttf') format('truetype');
+    src: font-url('HUFSM.woff2') format('woff2'),
+        font-url('HUFSM.woff') format('woff'),
+        font-url('HUFSM.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

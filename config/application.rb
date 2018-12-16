@@ -22,6 +22,8 @@ module Workspace
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf/woff2)$/
+
     config.autoload_paths += %W(#{config.root}/app/models/dept)
     config.autoload_paths += %W(#{config.root}/app/models/dept/major/global)
     config.autoload_paths += %W(#{config.root}/app/models/dept/major/global/translation)
