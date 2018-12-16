@@ -19,26 +19,6 @@
         <% if user_signed_in? %>
           <% if current_user.profile.nil? %>
           <% else %>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                게시판
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href= <%=posts_path%> > <%=current_user.profile.major.korean %> 게시판 </a>
-                <% if current_user.profile.minor.nil?%>
-                <% else %>
-                  <a class="dropdown-item" href= <%=sub_index_path%> > <%=current_user.profile.minor.korean %> 게시판</a>
-                <% end %>
-              </div>
-            </li>
-
-          <% end %>
-        <% else %>
-        <% end %>
-        
-        <% if user_signed_in? %>
-          <% if current_user.profile.nil? %>
-          <% else %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               학교 사이트 링크

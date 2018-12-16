@@ -24,7 +24,7 @@ $font-family-sans-serif: Hufsl !default;
 
 @font-face {
     font-family: 'Hufsb';
-    src: url('HUFSB.woff2') format('woff2'),
+    src: font-url('HUFSB.woff2') format('woff2'),
         url('HUFSB.woff') format('woff'),
         url('HUFSB.ttf') format('truetype');
     font-weight: normal;
