@@ -1,8 +1,17 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  root 'devise/sessions#new'
-  
+
   devise_for :users, controllers: { confirmations: 'confirmations' }
+
+  devise_scope :user do
+    authenticated :user do
+      root :to => 'profiles#index', as: :authenticated_root
+    end
+    unauthenticated do
+      root 'devise/sessions#new', as: :unauthenticated_root
+    end
+  end
+
   resources :posts
   
   # 이중전공 게시판 라우팅
