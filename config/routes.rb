@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  root 'profiles#index'
+  root 'devise/sessions#new'
   
   devise_for :users, controllers: { confirmations: 'confirmations' }
   resources :posts
