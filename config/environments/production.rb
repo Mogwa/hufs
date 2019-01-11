@@ -76,18 +76,13 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
-  # devise : 이메일 인증 설정
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { host: 'hufsgraduation.herokuapp.com' }
   ActionMailer::Base.smtp_settings = {
-      :address              => 'smtp.sendgrid.net',
-      :domain               => 'smtp.sendgrid.net',
-      :port                 => 465,
-      :user_name            => "apikey",
-      :password             => "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",
-      :authentication       => 'login',
+      :user_name => ' postmaster@hufsgraduation.info',
+      :password => 'bb9b491c87beeeb69a2de2d26dc31bcf-060550c6-cab2871f',
+      :domain => 'hufsgraduation.info',
+      :address => 'smtp.mailgun.org',
+      :port => 587,
+      :authentication => :plain,
       :enable_starttls_auto => true
   }
 
