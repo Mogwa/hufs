@@ -4,3 +4,4 @@ class ConfirmationsController < Devise::ConfirmationsController
     sign_in(resource) # In case you want to sign in the user
     new_profile_path
   end
+end
