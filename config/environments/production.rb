@@ -77,14 +77,17 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  # devise : 이메일 인증 설정
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
   ActionMailer::Base.smtp_settings = {
-      :user_name => ' postmaster@hufsgraduation.info',
-      :password => 'bb9b491c87beeeb69a2de2d26dc31bcf-060550c6-cab2871f',
-      :domain => 'hufsgraduation.info',
-      :address => 'smtp.mailgun.org',
-      :port => 587,
-      :authentication => :plain,
+      :address              => 'smtp.gmail.com',
+      :domain               => 'mail.google.com',
+      :port                 => 587,
+      :user_name            => "davidkunin@likelion.org",
+      :password             => "",
+      :authentication       => 'login',
       :enable_starttls_auto => true
   }
-
 end
