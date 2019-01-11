@@ -8,12 +8,6 @@
 <body>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= render 'layouts/header' %>
-  <% if notice %>
-    <p class="alert alert-notice" style="color:#c09853;"><%= notice %></p-->
-  <% end %>
-  <% if alert %>
-    <p class="alert alert-error" style="color:#b94a48;"><%= alert %></p>
-  <% end %>
     <div class="container">
       <%= yield %>
     </div>
