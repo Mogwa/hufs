@@ -62,7 +62,7 @@ Rails.application.configure do
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
@@ -77,5 +77,18 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  # devise : 이메일 인증 설정
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { host: 'hufsgraduation.herokuapp.com' }
+  ActionMailer::Base.smtp_settings = {
+      :address              => 'smtp.sendgrid.net',
+      :domain               => 'smtp.sendgrid.net',
+      :port                 => 465,
+      :user_name            => "apikey",
+      :password             => "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",
+      :authentication       => 'login',
+      :enable_starttls_auto => true
+  }
 
 end

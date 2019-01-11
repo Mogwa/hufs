@@ -24,5 +24,6 @@ Rails.application.routes.draw do
   patch 'graduation', as:'graduation', to: 'profiles#edit'
   get 'edit_profile' => 'profiles#profile_edit'
   patch 'edit_profile' => 'profiles#update'
+  get 'reset_graduation' => 'profiles#reset_graduation'
 
 end

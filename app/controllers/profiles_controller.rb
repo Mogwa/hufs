@@ -28,11 +28,22 @@ class ProfilesController < ApplicationController
   def update
     @profile = current_user.profile
     if @profile.update(profile_params)
-      redirect_to my_page_url
+      redirect_to reset_graduation_path
     else
       render edit_profile_url
     end
   end
+
+  # def reset_graduation
+  #   @reset = current_user.graduation
+  #   x = 1
+  #   while x < 41
+  #     @reset.update(f{}: nil)
+  #     x += 1
+  #   end
+  #   @reset.save
+  #   redirect_to root_path
+  # end
   
   def edit
     @graduation = current_user.graduation.update(graduation_params)
