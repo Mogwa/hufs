@@ -7,7 +7,7 @@ RailsAdmin.config do |config|
     redirect_to main_app.root_path unless current_user.profile.role == "admin"
   end
   config.current_user_method(&:current_user)
-  config.included_models = %w(User Profile Dept Global Seoul Suggestions Eit)
+  config.included_models = %w(User Profile Dept Global Seoul Suggestion)
   ### Popular gems integration
 
   ## == Devise ==
