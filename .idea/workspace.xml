@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a40d6f-53df-46a1-83b0-45a911e60799" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/rails_admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/rails_admin.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -130,7 +129,7 @@
           <entry key="jbuilder" value="1" />
           <entry key="js" value="7" />
           <entry key="lock" value="2" />
-          <entry key="rb" value="171" />
+          <entry key="rb" value="172" />
           <entry key="scss" value="5" />
           <entry key="yml" value="8" />
         </counts>
@@ -141,7 +140,7 @@
           <entry key="JavaScript" value="7" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="102" />
-          <entry key="Ruby" value="178" />
+          <entry key="Ruby" value="179" />
           <entry key="SCSS" value="5" />
           <entry key="YAML" value="8" />
         </counts>
@@ -152,7 +151,7 @@
           <entry key="erb" value="2651" />
           <entry key="js" value="10" />
           <entry key="lock" value="1" />
-          <entry key="rb" value="6368" />
+          <entry key="rb" value="6387" />
           <entry key="scss" value="54" />
           <entry key="yml" value="107" />
         </counts>
@@ -162,7 +161,7 @@
           <entry key="JavaScript" value="10" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="2651" />
-          <entry key="Ruby" value="6451" />
+          <entry key="Ruby" value="6470" />
           <entry key="SCSS" value="54" />
           <entry key="YAML" value="107" />
         </counts>
@@ -173,7 +172,17 @@
     <favorites_list name="Mogwa" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -206,7 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20180824125303_create_graduations.rb" />
         <option value="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" />
         <option value="$PROJECT_DIR$/lib/components/input_group_component.rb" />
         <option value="$PROJECT_DIR$/config/initializers/simple_form.rb" />
@@ -257,6 +265,7 @@
         <option value="$PROJECT_DIR$/app/views/temporaries/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/suggestions/new.html.erb" />
         <option value="$PROJECT_DIR$/config/tinymce.yml" />
+        <option value="$PROJECT_DIR$/config/initializers/rails_admin.rb" />
       </list>
     </option>
   </component>
@@ -294,6 +303,22 @@
             <path>
               <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="initializers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -496,12 +521,12 @@
       <workItem from="1547196652202" duration="852000" />
       <workItem from="1547210923086" duration="3312000" />
       <workItem from="1547214867764" duration="6158000" />
-      <workItem from="1547299604619" duration="9411000" />
+      <workItem from="1547299604619" duration="10410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77677000" />
+    <option name="totallyTimeSpent" value="78676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -514,6 +539,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="971" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49862638" visible="true" weight="0.13569683" />
       <window_info id="Structure" order="1" sideWeight="0.50076103" side_tool="true" weight="0.26923078" />
@@ -570,13 +596,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/confirmations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -948,6 +967,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
         </state>
       </provider>
     </entry>
