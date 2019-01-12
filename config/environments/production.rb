@@ -86,7 +86,7 @@ Rails.application.configure do
       :domain               => 'mail.hufsgraduation.info',
       :port                 => 587,
       :user_name            => "post@hufsgraduation.info",
-      :password             => "ENV["EMAIL_PASSWORD"]",
+      :password             => ENV["EMAIL_PASSWORD"],
       :authentication       => 'login',
       :enable_starttls_auto => true
   }
