@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a40d6f-53df-46a1-83b0-45a911e60799" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -130,7 +128,7 @@
           <entry key="erb" value="66" />
           <entry key="js" value="2" />
           <entry key="lock" value="2" />
-          <entry key="rb" value="151" />
+          <entry key="rb" value="152" />
           <entry key="scss" value="2" />
           <entry key="yml" value="3" />
         </counts>
@@ -141,7 +139,7 @@
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="66" />
-          <entry key="Ruby" value="156" />
+          <entry key="Ruby" value="157" />
           <entry key="SCSS" value="2" />
           <entry key="YAML" value="3" />
         </counts>
@@ -151,7 +149,7 @@
           <entry key="Gemfile" value="65" />
           <entry key="erb" value="2222" />
           <entry key="lock" value="1" />
-          <entry key="rb" value="5849" />
+          <entry key="rb" value="5918" />
           <entry key="scss" value="54" />
         </counts>
       </usages-collector>
@@ -159,7 +157,7 @@
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="2222" />
-          <entry key="Ruby" value="5914" />
+          <entry key="Ruby" value="5983" />
           <entry key="SCSS" value="54" />
         </counts>
       </usages-collector>
@@ -169,7 +167,17 @@
     <favorites_list name="Mogwa" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -244,7 +252,6 @@
         <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/controllers/confirmations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
@@ -252,6 +259,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -268,10 +276,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="840" />
     <option name="y" value="23" />
-    <option name="width" value="2304" />
-    <option name="height" value="1217" />
+    <option name="width" value="840" />
+    <option name="height" value="971" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -339,7 +348,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="minimum&#9;null&#9;null&#10;gem&#9;FILE&#9;file:///Users/kun/Desktop/Mogwa/Gemfile&#10;routes.rb&#9;FILE&#9;file:///Users/kun/Desktop/Mogwa/config/routes.rb" />
+    <property name="SearchEverywhereHistoryKey" value="production&#9;FILE&#9;file:///Users/kun/Desktop/Mogwa/config/environments/production.rb&#10;minimum&#9;null&#9;null&#10;gem&#9;FILE&#9;file:///Users/kun/Desktop/Mogwa/Gemfile&#10;routes.rb&#9;FILE&#9;file:///Users/kun/Desktop/Mogwa/config/routes.rb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -532,12 +541,12 @@
       <workItem from="1547187343518" duration="1601000" />
       <workItem from="1547196652202" duration="852000" />
       <workItem from="1547210923086" duration="3312000" />
-      <workItem from="1547214867764" duration="4273000" />
+      <workItem from="1547214867764" duration="4911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66381000" />
+    <option name="totallyTimeSpent" value="67019000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,9 +558,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="971" extended-state="6" />
+    <frame x="840" y="23" width="840" height="971" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49862638" visible="true" weight="0.16625917" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49862638" visible="true" weight="0.34170854" />
       <window_info id="Structure" order="1" sideWeight="0.50076103" side_tool="true" weight="0.26923078" />
       <window_info id="Favorites" order="2" show_stripe_button="false" sideWeight="0.50137365" side_tool="true" weight="0.119469024" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -564,7 +574,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32988507" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32890704" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44018584" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44018584" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50061053" side_tool="true" weight="0.32988507" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32988507" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -750,13 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/rails.validations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3812">
@@ -893,6 +896,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
         </state>
       </provider>
     </entry>

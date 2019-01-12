@@ -82,11 +82,11 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = { host: 'hufsgraduation.info' }
   ActionMailer::Base.smtp_settings = {
-      :address              => 'smtp.gmail.com',
-      :domain               => 'mail.google.com',
+      :address              => 'smtp.mailgun.org',
+      :domain               => 'mail.hufsgraduation.info',
       :port                 => 587,
-      :user_name            => "davidkunin@likelion.org",
-      :password             => "dKi518op.",
+      :user_name            => "post@hufsgraduation.info",
+      :password             => "daniel0324",
       :authentication       => 'login',
       :enable_starttls_auto => true
   }
