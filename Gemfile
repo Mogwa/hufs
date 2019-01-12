@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 #우리가 설치한 잼은 여기서부터 설명과 함께
 
+#editor WYSIWYG
+gem 'tinymce-rails'
 #admin
 gem 'rails_admin'
 #회원가입 및 유저관리

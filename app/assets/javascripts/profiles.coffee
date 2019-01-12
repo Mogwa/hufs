@@ -10,7 +10,7 @@ $(document).on 'turbolinks:load', ->
 
     jQuery ->
       majors = $('#profile_major_id').html()
-      $('#profile_major_id').empty()
+#      $('#profile_major_id').empty()
       $('#profile_major_campus').change ->
         campus = $('#profile_major_campus :selected').text()
         options = $(majors).filter("optgroup[label='#{campus}']").html()
@@ -21,7 +21,7 @@ $(document).on 'turbolinks:load', ->
 
     jQuery ->
       minors = $('#profile_minor_id').html()
-      $('#profile_minor_id').empty()
+#      $('#profile_minor_id').empty()
       $('#profile_minor_campus').change ->
         campus = $('#profile_minor_campus :selected').text()
         options = $(minors).filter("optgroup[label='#{campus}']").html()
