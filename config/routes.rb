@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   end
 
   resources :posts
+  resources :suggestions
   
   # 이중전공 게시판 라우팅
   get 'post_sub' => 'posts#indexs'

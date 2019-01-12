@@ -1,0 +1,8 @@
+<h1>졸업조건 변경 요청사항</h1>
+
+<%= simple_form_for @suggestion, url: suggestions_path, method: :post, html: { class: 'form' }, validate: true do |f| %>
+  <%= f.hidden_field :user, value: current_user.id %>
+  <%= f.input :title, label: "제목", error: '올바른 제목을 입력해주세요' %><br>
+  <%= f.input :content, label: "내용", error: '올바른 내용을 입력해주세요'  %><br>
+  <%= f.submit class: "btn btn-secondary" %>
+<%end%>

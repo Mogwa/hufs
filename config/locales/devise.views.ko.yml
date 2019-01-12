@@ -46,10 +46,10 @@ ko:
       unconfirmed: "계속하기 전에 이메일 주소를 인증해야 합니다."
     mailer:
       confirmation_instructions:
-        action: "계정 인증"
+        action: "본인 계정 인증"
         greeting: "%{recipient}님"
-        instruction: "저희 서비스를 이용해주셔서 감사합니다. 아래 링크를 클릭하시면 본인 인증이 완료 됩니다!"
-        subject: "한국외대 졸업조건 페이지 이메일 인증 안내"
+        instruction: "아래 링크를 클릭하시면 이메일 인증이 완료됩니다:"
+        subject: "이메일 인증 안내"
       email_changed:
         greeting: 
         message: 
