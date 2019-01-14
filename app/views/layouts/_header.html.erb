@@ -15,9 +15,9 @@
     <!--nav bar-->
     <nav class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><%= link_to '졸업요건', my_page_path , class: 'nav-link' %></li>
-        <li class="nav-item"><%= link_to '정보 수정 요청', new_suggestion_path, class: 'nav-link'%></li>
         <% if user_signed_in? %>
+          <li class="nav-item"><%= link_to '졸업요건', my_page_path , class: 'nav-link' %></li>
+          <li class="nav-item"><%= link_to '정보 수정 요청', new_suggestion_path, class: 'nav-link'%></li>
           <% if current_user.profile.nil? %>
           <% else %>
           <li class="nav-item dropdown">

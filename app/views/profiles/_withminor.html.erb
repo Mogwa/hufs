@@ -3,7 +3,7 @@
   <h2><%=@profile.name%>님의 졸업요건</h2>
 </div>
 <div>
-  <a class="btn btn-sm" style="background-color: #002B49;" href="<%=edit_profile_path %>" role="button">프로필 수정하기</a>
+  <a class="btn btn-sm text-white" style="background-color: #002B49;" href="<%=edit_profile_path %>" role="button">프로필 수정하기</a>
 </div>
   
 <% a = current_user.profile.major_campus.camelize.constantize.all%>
