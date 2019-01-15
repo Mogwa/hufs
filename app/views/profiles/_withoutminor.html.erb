@@ -1,6 +1,9 @@
 <div class="bold">
   <h2><%=@profile.name%>님의 졸업요건</h2>
 </div>
+<div>
+  <a class="btn btn-sm text-white" style="background-color: #002B49;" href="<%=edit_profile_path %>" role="button">프로필 수정하기</a>
+</div>
 
 <% a = current_user.profile.major_campus.camelize.constantize.all%>
 <% ab = 0 %>
@@ -60,7 +63,7 @@
 <div class = "d-none d-md-block">
   <div class = "jumbotron mobile-font">
     <!-- 여기서 체크리스트 제공 할 예정 -->
-    <%= simple_form_for @graduation, url: graduation_path, method: 'patch' do |f|%>
+    <%= simple_form_for @graduation, url: graduation_path, wrapper: :input_group, method: 'patch' do |f|%>
 
       <div class="row">
         <div class="col-md border-right">
@@ -68,6 +71,10 @@
           <br>
           <br>
           <div class="pre-scrollable-2">
+            <div class="input-group">
+              <%= f.input :common_points, label: "교양 이수학점", append: "/ 35학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
+            </div>
+            <hr>
             <% a = current_user.profile.major_campus.camelize.constantize.all %>
             <% x = 1 %>
             <% a.each do |t| %>
@@ -91,6 +98,10 @@
           <br>
           <br>
           <div class="pre-scrollable-2">
+            <div class="input-group">
+              <%= f.input :first_points, label: "전공 이수학점", append: "/ 35학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
+            </div>
+            <hr>
             <% b = current_user.profile.major.english.camelize.constantize.all %>
             <% if b.empty? %>
               <h5>해당 과 졸업 요건 정보가 없습니다. </h5>

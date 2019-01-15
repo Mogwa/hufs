@@ -221,10 +221,11 @@ ActiveRecord::Schema.define(version: 20190112143002) do
   create_table "suggestions", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
-    t.string   "major"
+    t.string   "major_campus"
+    t.string   "major_id"
     t.string   "user"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "users", force: :cascade do |t|

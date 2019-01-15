@@ -28,7 +28,7 @@ class ProfilesController < ApplicationController
   def update
     @profile = current_user.profile
     if @profile.update(profile_params)
-      redirect_to reset_graduation_path
+      redirect_to authenticated_root_path
     else
       render edit_profile_url
     end

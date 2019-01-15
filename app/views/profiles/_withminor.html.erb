@@ -96,6 +96,7 @@
             <div class="input-group">
               <%= f.input :common_points, label: "교양 이수학점", append: "/ 35학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
             </div>
+            <hr>
             <% a = current_user.profile.major_campus.camelize.constantize.all %>
             <% x = 1 %>
               <% a.each do |t| %>
@@ -119,13 +120,18 @@
           <br>
           <br>
           <div class="pre-scrollable-2">
+            <div class="input-group">
+              <%= f.input :first_points, label: "전공 이수학점", append: "/ 35학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
+            </div>
+            <hr>
             <% b = current_user.profile.major.english.camelize.constantize.all %>
             <% if b.empty? %>
-              <h5>해당 과 졸업 요건 정보가 없습니다. </h5>
+              <br>
+              <h5>해당 졸업 요건 정보가 없습니다. </h5>
               <br>
               <h5> 정보 추가를 위해서는</h5>
-              <h5> davidkunin@gmail.com으로</h5>
-              <h5> 연락 부탁드립니다. </h5>
+              <h5> 위에 정보 수정 요청 버튼을</h5>
+              <h5> 클릭해주시기 바랍니다. </h5>
             <%else %>
             <% y = 1 %>
             <% b.each do |t| %>
@@ -151,13 +157,19 @@
             <br>
             <br>
             <div class="pre-scrollable2">
+              <div class="input-group">
+                <%= f.input :second_points, label: "이중전공 이수학점", append: "/ 35학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
+                <hr>
+              </div>
+
               <% c = current_user.profile.minor.english.camelize.constantize.all %>
               <% if c.empty? %>
+                <br>
                 <h5> 해당 과 졸업 요건 정보가 없습니다. </h5>
                 <br>
                 <h5> 정보 추가를 위해서는</h5>
-                <h5> davidkunin@gmail.com으로</h5>
-                <h5> 연락 부탁드립니다. </h5>
+                <h5> 위에 정보 수정 요청 버튼을</h5>
+                <h5> 클릭해주시기 바랍니다. </h5>
               <%else %>
               <% z = 1 %>
               <% c.each do |t| %>
@@ -241,8 +253,8 @@
                 <h5> 해당 과 졸업 요건 정보가 없습니다. </h5>
                 <br>
                 <h5> 정보 추가를 위해서는</h5>
-                <h5> davidkunin@gmail.com으로</h5>
-                <h5> 연락 부탁드립니다. </h5>
+                <h5> 위에 정보 수정 요청 버튼을</h5>
+                <h5> 클릭해주시기 바랍니다. </h5>
               <%else %>
                 <% y = 1 %>
                 <% b.each do |t| %>

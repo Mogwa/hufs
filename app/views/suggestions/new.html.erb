@@ -3,7 +3,12 @@
 <%= simple_form_for @suggestion, url: suggestions_path, method: :post, html: { class: 'form' }, validate: true do |f| %>
   <%= f.hidden_field :user, value: current_user.id %>
   <%= f.input :title, label: "제목", error: '올바른 제목을 입력해주세요' %><br>
+  <%= f.input :major_campus, collection: Campus.all, label_method: :name, value_method: :english, label: "변경 요청 학과", prompt: "캠퍼스를 선택하세요" %>
+  <%= content_tag :div, class: 'js-dependent-fields', data: { 'select-id': 'suggestion_major_campus', 'option-value': "seoul|global"} do %>
+    <%= f.input :major_id, collection: Campus.all, as: :grouped_select, group_method: :majors, prompt: "전공을 선택하세요", label_method: :korean, value_method: :korean, label: false %>
+  <%end %>
   <%= f.input :content, label: false, as: :text, error: '올바른 내용을 입력해주세요', :input_html => {:class => "tinymce", :rows => 15, :cols => 80} %><br>
   <%= f.submit class: "btn btn-secondary" %>
+  <%= f.hidden_field :user, :value => current_user.id %>
 <%end%>
 <%= tinymce %>
