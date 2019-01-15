@@ -9,14 +9,15 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="한국외대 졸업조건">
 </head>
-<body>
 
+<body>
+<div class="background-white">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
     </div>
   <%= render 'layouts/footer'%>
-
+</div>
 </body>
 </html>
