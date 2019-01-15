@@ -60,7 +60,17 @@ class ProfilesController < ApplicationController
         @count = current_user.graduation.attributes.values.count(true)
       end
     end
-  end
+
+    if current_user.profile.study_type == "0"
+      if ["Ait","Cit","Eit","Git","Lit","Jit","Mit","Sit","Tit"].include? current_user.profile.major.english
+        @first_major_points = 70
+      else
+        @first_major_points = 55
+      end
+    else
+      @first_major_points = 55
+    end
+    end
   
   private
   def set_profile

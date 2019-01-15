@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="26a40d6f-53df-46a1-83b0-45a911e60799" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/suggestion.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/suggestion.coffee" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/suggestions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/suggestions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/profiles/_withminor.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/_withminor.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profiles/_withoutminor.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/_withoutminor.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profiles/profile_edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/profile_edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/suggestions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/suggestions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/rails_admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/rails_admin.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190112143002_create_suggestions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190112143002_create_suggestions.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -125,22 +117,22 @@
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.4" value="5" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="6" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="6" />
           <entry key="coffee" value="10" />
-          <entry key="erb" value="120" />
+          <entry key="erb" value="125" />
           <entry key="jbuilder" value="1" />
           <entry key="js" value="8" />
           <entry key="lock" value="2" />
-          <entry key="rb" value="182" />
+          <entry key="rb" value="185" />
           <entry key="scss" value="5" />
           <entry key="yml" value="8" />
         </counts>
@@ -150,8 +142,8 @@
           <entry key="CoffeeScript" value="10" />
           <entry key="JavaScript" value="8" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="RHTML" value="120" />
-          <entry key="Ruby" value="189" />
+          <entry key="RHTML" value="125" />
+          <entry key="Ruby" value="192" />
           <entry key="SCSS" value="5" />
           <entry key="YAML" value="8" />
         </counts>
@@ -160,10 +152,10 @@
         <counts>
           <entry key="Gemfile" value="83" />
           <entry key="coffee" value="14" />
-          <entry key="erb" value="2973" />
+          <entry key="erb" value="3005" />
           <entry key="js" value="10" />
           <entry key="lock" value="1" />
-          <entry key="rb" value="6524" />
+          <entry key="rb" value="6819" />
           <entry key="scss" value="54" />
           <entry key="yml" value="107" />
         </counts>
@@ -173,8 +165,8 @@
           <entry key="CoffeeScript" value="14" />
           <entry key="JavaScript" value="10" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="RHTML" value="2973" />
-          <entry key="Ruby" value="6607" />
+          <entry key="RHTML" value="3005" />
+          <entry key="Ruby" value="6902" />
           <entry key="SCSS" value="54" />
           <entry key="YAML" value="107" />
         </counts>
@@ -185,12 +177,21 @@
     <favorites_list name="Mogwa" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-592">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state>
+              <caret column="97" selection-start-column="97" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -246,7 +247,6 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/confirmations_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/models/suggestion.rb" />
@@ -274,16 +274,17 @@
         <option value="$PROJECT_DIR$/app/views/temporaries/new.html.erb" />
         <option value="$PROJECT_DIR$/config/tinymce.yml" />
         <option value="$PROJECT_DIR$/app/views/profiles/profile_edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/profiles/_withminor.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_withoutminor.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20190112143002_create_suggestions.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/profiles.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/suggestion.coffee" />
         <option value="$PROJECT_DIR$/config/initializers/rails_admin.rb" />
         <option value="$PROJECT_DIR$/app/controllers/suggestions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/suggestions/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/profiles/_withminor.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -301,6 +302,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="840" />
     <option name="y" value="23" />
     <option name="width" value="840" />
     <option name="height" value="971" />
@@ -313,8 +315,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,13 +327,27 @@
             <path>
               <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="initializers" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -538,11 +554,12 @@
       <workItem from="1547472045009" duration="338000" />
       <workItem from="1547560454634" duration="1511000" />
       <workItem from="1547568512696" duration="2042000" />
+      <workItem from="1547570587265" duration="1546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82910000" />
+    <option name="totallyTimeSpent" value="84456000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -557,7 +574,29 @@
     <frame x="0" y="23" width="1680" height="971" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49862638" visible="true" weight="0.20354523" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49862638" visible="true" weight="0.20599023" />
+      <window_info id="Structure" order="1" sideWeight="0.50076103" side_tool="true" weight="0.26923078" />
+      <window_info id="Favorites" order="2" show_stripe_button="false" sideWeight="0.50137365" side_tool="true" weight="0.119469024" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329849" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" weight="0.32890704" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32868758" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32988507" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32868758" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.30081302" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50061053" side_tool="true" weight="0.32988507" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32988507" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49862638" visible="true" weight="0.20599023" />
       <window_info id="Structure" order="1" sideWeight="0.50076103" side_tool="true" weight="0.26923078" />
       <window_info id="Favorites" order="2" show_stripe_button="false" sideWeight="0.50137365" side_tool="true" weight="0.119469024" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -577,7 +616,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -612,13 +651,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -796,24 +828,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-41">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -827,16 +845,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20180824203141_create_depts.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_withminor.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="87" column="81" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="81" />
-          <folding>
-            <marker date="1547569285405" expanded="true" signature="64:204" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_withoutminor.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2369">
@@ -849,22 +857,12 @@
         <state relative-caret-position="-2048" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="23" column="87" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="87" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181123150759_create_profiles.rb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -898,13 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190112143002_create_suggestions.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -928,8 +919,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-592">
+        <state relative-caret-position="23">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181123150759_create_profiles.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180824195448_create_majors.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/_withminor.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1157">
+          <caret line="123" column="94" selection-start-line="123" selection-start-column="94" selection-end-line="123" selection-end-column="94" />
+          <folding>
+            <marker date="1547571765439" expanded="true" signature="64:204" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="97" selection-start-column="97" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
         </state>
       </provider>
     </entry>

@@ -121,7 +121,7 @@
           <br>
           <div class="pre-scrollable-2">
             <div class="input-group">
-              <%= f.input :first_points, label: "전공 이수학점", append: "/ 35학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
+              <%= f.input :first_points, label: "전공 이수학점", append: "/ #{@first_major_points}학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
             </div>
             <hr>
             <% b = current_user.profile.major.english.camelize.constantize.all %>
