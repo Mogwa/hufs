@@ -30,6 +30,8 @@ $(document).on 'turbolinks:load', ->
         else
           $('#profile_minor_id').empty()
 
+    
+
 return
 
 
