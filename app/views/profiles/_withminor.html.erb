@@ -49,27 +49,27 @@
     <% end %>
   <br>
   <!-- 개인정보 보여주는 표 -->
-  <div class = "table-responsive mobile-font">
-    <table class="table text-center">
+  <div class = "table-responsive mobile-font" style= "padding-left: 0px; padding-right: 0px;">
+    <table class="table text-center" style= "padding-left: 0px; padding-right: 0px;">
         <tr style="margin-bottom: 0px";>
-          <th scope="row" class = "bold">이름</th>
-          <td><%= @profile.name %></td>
+          <th scope="row" class = "bold" style= "padding-left: 0px; padding-right: 0px;" >이름</th>
+          <td style= "padding-left: 0px; padding-right: 0px;" ><%= @profile.name %></td>
           <td></td>
-          <th scope="row" class = "bold">입학연도</th>
-          <td><%= @profile.year %></td>
+          <th scope="row" class = "bold" style= "padding-left: 0px; padding-right: 0px;">입학연도</th>
+          <td style= "padding-left: 0px; padding-right: 0px;"><%= @profile.year %></td>
           <td></td>
         </tr>
         <tr>
-          <th scope="row" class = "bold">본전공</th>
-          <td><%=@profile.major.korean%></td>
+          <th scope="row" class = "bold" style= "padding-left: 0px; padding-right: 0px;">본전공</th>
+          <td style= "padding-left: 0px; padding-right: 0px;" ><%=@profile.major.korean%></td>
           <td></td>
-          <th scope="row" class = "bold">이중전공</th>
-          <td><%= @profile.minor.korean%></td>
+          <th scope="row" class = "bold" style= "padding-left: 0px; padding-right: 0px;" >이중전공</th>
+          <td style= "padding-left: 0px; padding-right: 0px;" ><%= @profile.minor.korean%></td>
           <td></td>
         </tr>
       </div>
         <tr style="position:relative; top: -74px;">
-          <th scope="row" class = "bold">진행 정도</th>
+          <th scope="row" class = "bold" style= "padding-left: 0px; padding-right: 0px;">진행 정도</th>
           <td colspan="9">
             <div class="progress" style="margin-top: 4px; margin-right: 4px">
             <% if ab == 0 %>
@@ -203,9 +203,10 @@
         </div>
     </div>
   <% end %>
-    
+
+
     <!-- mobile view -->
-    <%= simple_form_for @graduation, url: graduation_path, method: 'patch' do |f|%>
+    <%= simple_form_for @graduation, url: graduation_path, wrapper: :input_group_sm, method: 'patch' do |f|%>
     
     <div class = "d-md-none mobile-font">
       <div class="accordion" id="accordionExample">
@@ -221,6 +222,10 @@
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
               <% a = current_user.profile.major_campus.camelize.constantize.all %>
+              <div class="input-group">
+                <%= f.input :common_points, label: "교양 이수학점", append: "/ 35학점 " ,:input_html => {:maxlength =>2,:style=> 'width: 80px'}  %>
+              </div>
+              <hr>
             <% x = 1 %>
               <% a.each do |t| %>
                 <% s = t.start_year.to_i %>
@@ -249,6 +254,10 @@
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
               <% b = current_user.profile.major.english.camelize.constantize.all %>
+              <div class="input-group">
+                <%= f.input :first_points, label: "전공 이수학점", append: "/ #{@first_major_points}학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
+              </div>
+              <hr>
               <% if b.empty? %>
                 <h5> 해당 과 졸업 요건 정보가 없습니다. </h5>
                 <br>
@@ -285,6 +294,10 @@
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
               <% c = current_user.profile.minor.english.camelize.constantize.all %>
+              <div class="input-group">
+                <%= f.input :second_points, label: "이중전공 이수학점", append: "/ 35학점 ",:input_html => {:maxlength =>2,:style=> 'width: 80px'} %>
+              </div>
+              <hr>
               <% if c.empty? %>
                 <h5> 해당 과 졸업 요건 정보가 없습니다. </h5>
                 <br>
