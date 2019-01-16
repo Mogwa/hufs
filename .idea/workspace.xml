@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a40d6f-53df-46a1-83b0-45a911e60799" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/application.html+phone.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profiles/_withminor.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/_withminor.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html+phone.erb" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -132,7 +127,7 @@
           <entry key="Gemfile" value="6" />
           <entry key="coffee" value="13" />
           <entry key="css" value="2" />
-          <entry key="erb" value="128" />
+          <entry key="erb" value="130" />
           <entry key="html" value="1" />
           <entry key="jbuilder" value="1" />
           <entry key="js" value="10" />
@@ -152,7 +147,7 @@
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="10" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="RHTML" value="128" />
+          <entry key="RHTML" value="130" />
           <entry key="Ruby" value="194" />
           <entry key="SCSS" value="10" />
           <entry key="Sass" value="2" />
@@ -191,10 +186,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/_withminor.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="6877">
               <caret line="299" column="18" selection-start-line="299" selection-start-column="18" selection-end-line="299" selection-end-column="18" />
               <folding>
                 <element signature="e#1431#1478#0#HTML" expanded="true" />
@@ -211,6 +206,15 @@
                 <element signature="e#2596#2643#0#HTML" expanded="true" />
                 <marker date="1547607179299" expanded="true" signature="64:204" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -307,12 +311,12 @@
         <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/phone.coffee" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/phone.sass" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html+phone.erb" />
         <option value="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_withminor.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -359,19 +363,6 @@
               <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -379,18 +370,7 @@
               <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mogwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mogwa" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="initializers" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -601,12 +581,12 @@
       <workItem from="1547560454634" duration="1511000" />
       <workItem from="1547568512696" duration="2042000" />
       <workItem from="1547570587265" duration="5090000" />
-      <workItem from="1547603744960" duration="2879000" />
+      <workItem from="1547603744960" duration="2940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90879000" />
+    <option name="totallyTimeSpent" value="90940000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -621,7 +601,7 @@
     <frame x="0" y="23" width="1680" height="971" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49862638" visible="true" weight="0.12224939" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49862638" visible="true" weight="0.12224939" />
       <window_info id="Structure" order="1" sideWeight="0.50076103" side_tool="true" weight="0.26923078" />
       <window_info id="Favorites" order="2" show_stripe_button="false" sideWeight="0.50137365" side_tool="true" weight="0.119469024" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -634,7 +614,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32988507" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32868758" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30081302" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30081302" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50061053" side_tool="true" weight="0.32988507" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32988507" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -928,20 +908,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/phone.sass" />
     <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/framework7.css" />
     <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/framework7.js" />
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html+phone.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="23" lean-forward="true" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1374" />
@@ -957,9 +923,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html+phone.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_withminor.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="6877">
           <caret line="299" column="18" selection-start-line="299" selection-start-column="18" selection-end-line="299" selection-end-column="18" />
           <folding>
             <element signature="e#1431#1478#0#HTML" expanded="true" />
@@ -976,6 +949,13 @@
             <element signature="e#2596#2643#0#HTML" expanded="true" />
             <marker date="1547607179299" expanded="true" signature="64:204" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
         </state>
       </provider>
     </entry>
